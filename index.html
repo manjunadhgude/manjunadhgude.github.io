@@ -2974,8 +2974,9 @@ html.js main section.inview#contact h2{
   document.documentElement.dataset.motion = reduce ? 'reduced' : 'full';
   $('#year').textContent = new Date().getFullYear();
 
-  // ---------------- cinematic hero / scroll-scrubbed video ----------------
-  // The video is primed once, then remains paused. Scrolling alone controls its frame.
+  // ---------------- smooth cinematic hero video ----------------
+  // Scroll position sets a destination; the rendered frame eases toward it
+  // instead of jumping directly to every wheel/touch scroll position.
   const hero = $('.hero');
   const heroVideo = $('#heroVideo');
   if(hero && heroVideo){
@@ -2983,8 +2984,11 @@ html.js main section.inview#contact h2{
     heroVideo.load();
 
     let targetTime = 0;
+    let easedTime = 0;
     let raf = 0;
     let ready = false;
+    let lastTick = 0;
+    const seekStep = 1 / 30; // Limit seek requests to about 30 updates per second.
 
     const getProgress = () => {
       const rect = hero.getBoundingClientRect();
@@ -2992,35 +2996,68 @@ html.js main section.inview#contact h2{
       return Math.min(1, Math.max(0, -rect.top / travel));
     };
 
-    const applyFrame = () => {
+    const endTime = () => {
+      if(!Number.isFinite(heroVideo.duration) || heroVideo.duration <= 0) return 0;
+      return Math.max(0, heroVideo.duration - 0.04);
+    };
+
+    const animateScrub = (now) => {
       raf = 0;
       if(!ready || !Number.isFinite(heroVideo.duration) || heroVideo.duration <= 0) return;
-      const t = Math.min(Math.max(targetTime, 0), Math.max(0, heroVideo.duration - 0.04));
-      if(Math.abs(heroVideo.currentTime - t) > 0.008){
-        try { heroVideo.currentTime = t; } catch(e) {}
+
+      const elapsed = lastTick ? Math.min(50, now - lastTick) : 16.7;
+      lastTick = now;
+
+      const end = endTime();
+      targetTime = Math.min(end, Math.max(0, targetTime));
+      const difference = targetTime - easedTime;
+
+      // About 95% of the distance is covered in a little over a quarter second.
+      // The same easing works in both scroll directions.
+      const blend = 1 - Math.exp(-elapsed / 88);
+      easedTime += difference * blend;
+
+      if(Math.abs(targetTime - easedTime) < 0.006) easedTime = targetTime;
+
+      // Avoid flooding the decoder with seek requests; wait for the current seek
+      // to finish before requesting the next eased frame.
+      if(!heroVideo.seeking && Math.abs(heroVideo.currentTime - easedTime) >= seekStep){
+        const frameTime = Math.min(end, Math.max(0, easedTime));
+        try { heroVideo.currentTime = frameTime; } catch(e) {}
+      }
+
+      if(Math.abs(targetTime - easedTime) >= 0.006 || heroVideo.seeking){
+        raf = requestAnimationFrame(animateScrub);
       }
     };
 
-    const scrub = () => {
+    const requestSmoothScrub = () => {
       if(!ready || !Number.isFinite(heroVideo.duration) || heroVideo.duration <= 0) return;
-      targetTime = getProgress() * Math.max(0, heroVideo.duration - 0.04);
-      if(!raf) raf = requestAnimationFrame(applyFrame);
+      targetTime = getProgress() * endTime();
+      if(!raf) raf = requestAnimationFrame(animateScrub);
     };
 
     const primeVideo = () => {
       ready = true;
-      // Never start autonomous playback: the scroll position is the only playback control.
       heroVideo.pause();
-      try { heroVideo.currentTime = 0; } catch(e) {}
-      scrub();
+      targetTime = getProgress() * endTime();
+      easedTime = targetTime;
+      try { heroVideo.currentTime = Math.min(targetTime, endTime()); } catch(e) {}
+      lastTick = 0;
+      requestSmoothScrub();
     };
 
     heroVideo.addEventListener('loadedmetadata', primeVideo, {once:true});
-    heroVideo.addEventListener('loadeddata', scrub, {once:true});
-    window.addEventListener('scroll', scrub, {passive:true});
-    window.addEventListener('resize', scrub, {passive:true});
-    window.addEventListener('load', scrub, {once:true});
-    scrub();
+    heroVideo.addEventListener('loadeddata', requestSmoothScrub, {once:true});
+    heroVideo.addEventListener('seeked', () => {
+      if(Math.abs(targetTime - easedTime) >= 0.006 && !raf){
+        raf = requestAnimationFrame(animateScrub);
+      }
+    });
+    window.addEventListener('scroll', requestSmoothScrub, {passive:true});
+    window.addEventListener('resize', requestSmoothScrub, {passive:true});
+    window.addEventListener('load', requestSmoothScrub, {once:true});
+    requestSmoothScrub();
   }
 
   // ---------------- navigation + progressive state ----------------
