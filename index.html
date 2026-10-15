@@ -2211,6 +2211,146 @@ footer{font-size:10.5px}
   body{font-size:16px}.hero-copy{font-size:17px}.index-v{font-size:14px}.section-head p{font-size:16px}.system-center p{font-size:14px}.project-desc{font-size:14px}.depth-summary p{font-size:13.5px}.evidence-note{font-size:13.5px}.paper-block p{font-size:14px}.cap-detail p{font-size:14px}.traj-copy{font-size:13.5px}.note-view p{font-size:14px}.contact p{font-size:15.5px}.exp-copy p{font-size:14px}.detail-block ul{font-size:13.5px}.orientation-card p{font-size:14px}.about-copy p{font-size:15.5px}.about-lines a{font-size:12.5px}.contact-value{font-size:13.5px}
 }
 </style>
+<style id="target-main-heading-brightness-and-entry-glow">
+/* Brighter main-heading gradients; each section keeps its distinct palette. */
+.hero h1{
+  background-image:linear-gradient(100deg,#ffffff 0%,#b7d7ff 24%,#e0caff 46%,#b2ffe5 70%,#ffe1a6 100%);
+}
+#orientation .section-head h2{
+  background-image:linear-gradient(105deg,#ffffff 0%,#c0dcff 32%,#ddc9ff 62%,#b8ffea 100%);
+  opacity:1;
+}
+#work .section-head h2{
+  background-image:linear-gradient(105deg,#ffffff 0%,#b5d2ff 30%,#dcc6ff 60%,#b0ffe7 100%);
+  opacity:1;
+}
+#evidence .section-head h2{
+  background-image:linear-gradient(105deg,#ffffff 0%,#ffe5a8 28%,#ffc7b8 60%,#b4ffe6 100%);
+  opacity:1;
+}
+#research .section-head h2{
+  background-image:linear-gradient(105deg,#ffffff 0%,#b0ffe3 28%,#a8f2ff 60%,#c1dcff 100%);
+  opacity:1;
+}
+#capabilities .section-head h2{
+  background-image:linear-gradient(105deg,#ffffff 0%,#bad7ff 28%,#ddc6ff 58%,#ffc0dc 100%);
+  opacity:1;
+}
+#trajectory .section-head h2{
+  background-image:linear-gradient(105deg,#ffffff 0%,#aaffdf 32%,#b9d7ff 72%,#ddc8ff 100%);
+  opacity:1;
+}
+#notebook .section-head h2{
+  background-image:linear-gradient(105deg,#ffffff 0%,#ddc6ff 30%,#adf3ff 68%,#b0ffe4 100%);
+  opacity:1;
+}
+#about .section-head h2{
+  background-image:linear-gradient(105deg,#ffffff 0%,#ffe0a3 34%,#b5ffe5 70%,#c2ddff 100%);
+  opacity:1;
+}
+#toolkit .section-head h2{
+  background-image:linear-gradient(105deg,#ffffff 0%,#aaf2ff 30%,#b9d7ff 60%,#dbc7ff 100%);
+  opacity:1;
+}
+#credentials .section-head h2{
+  background-image:linear-gradient(105deg,#ffffff 0%,#ffe3a3 30%,#ffc2c4 62%,#ddc8ff 100%);
+  opacity:1;
+}
+#contact h2{
+  background-image:linear-gradient(105deg,#ffffff 0%,#b0ffe4 30%,#b8d6ff 62%,#ddc8ff 100%);
+  opacity:1;
+}
+
+/* Different glow colors reinforce each heading's existing color identity. */
+.hero h1{
+  --heading-glow-primary:rgba(121,167,255,.82);
+  --heading-glow-secondary:rgba(179,154,255,.58);
+  animation:headingEntryGlow 1.85s cubic-bezier(.22,1,.36,1) .12s both;
+}
+#orientation .section-head h2{
+  --heading-glow-primary:rgba(145,190,255,.82);
+  --heading-glow-secondary:rgba(179,154,255,.58);
+}
+#work .section-head h2{
+  --heading-glow-primary:rgba(121,167,255,.84);
+  --heading-glow-secondary:rgba(130,226,200,.58);
+}
+#evidence .section-head h2{
+  --heading-glow-primary:rgba(255,204,117,.84);
+  --heading-glow-secondary:rgba(255,143,133,.62);
+}
+#research .section-head h2{
+  --heading-glow-primary:rgba(130,246,207,.84);
+  --heading-glow-secondary:rgba(103,216,245,.62);
+}
+#capabilities .section-head h2{
+  --heading-glow-primary:rgba(179,154,255,.84);
+  --heading-glow-secondary:rgba(255,143,181,.58);
+}
+#trajectory .section-head h2{
+  --heading-glow-primary:rgba(142,239,207,.84);
+  --heading-glow-secondary:rgba(121,167,255,.58);
+}
+#notebook .section-head h2{
+  --heading-glow-primary:rgba(190,157,255,.84);
+  --heading-glow-secondary:rgba(103,216,245,.62);
+}
+#about .section-head h2{
+  --heading-glow-primary:rgba(255,194,125,.84);
+  --heading-glow-secondary:rgba(130,226,200,.58);
+}
+#toolkit .section-head h2{
+  --heading-glow-primary:rgba(114,232,255,.84);
+  --heading-glow-secondary:rgba(121,167,255,.62);
+}
+#credentials .section-head h2{
+  --heading-glow-primary:rgba(255,213,112,.84);
+  --heading-glow-secondary:rgba(255,143,143,.62);
+}
+#contact h2{
+  --heading-glow-primary:rgba(130,246,207,.84);
+  --heading-glow-secondary:rgba(121,167,255,.62);
+}
+
+/* Each heading briefly brightens when its section first enters view. */
+@keyframes headingEntryGlow{
+  0%,100%{
+    filter:brightness(1) saturate(1)
+      drop-shadow(0 0 0 var(--heading-glow-primary,rgba(121,167,255,0)))
+      drop-shadow(0 0 0 var(--heading-glow-secondary,rgba(179,154,255,0)));
+  }
+  22%{
+    filter:brightness(1.22) saturate(1.16)
+      drop-shadow(0 0 9px var(--heading-glow-primary,rgba(121,167,255,.7)))
+      drop-shadow(0 0 22px var(--heading-glow-secondary,rgba(179,154,255,.4)));
+  }
+  43%{
+    filter:brightness(1.34) saturate(1.22)
+      drop-shadow(0 0 13px var(--heading-glow-primary,rgba(121,167,255,.75)))
+      drop-shadow(0 0 32px var(--heading-glow-secondary,rgba(179,154,255,.45)));
+  }
+  70%{
+    filter:brightness(1.12) saturate(1.08)
+      drop-shadow(0 0 5px var(--heading-glow-primary,rgba(121,167,255,.35)))
+      drop-shadow(0 0 12px var(--heading-glow-secondary,rgba(179,154,255,.2)));
+  }
+}
+/* Reuse the page's existing IntersectionObserver and .inview class. */
+html.js main section.inview .section-head h2{
+  animation:headingEntryGlow 1.85s cubic-bezier(.22,1,.36,1) both;
+}
+html.js main section.inview#contact h2{
+  animation:headingEntryGlow 1.85s cubic-bezier(.22,1,.36,1) both;
+}
+@media(prefers-reduced-motion:reduce){
+  .hero h1,
+  html.js main section.inview .section-head h2,
+  html.js main section.inview#contact h2{
+    animation:none!important;
+    filter:none!important;
+  }
+}
+</style>
 </head>
 <body data-depth="recruiter">
 <a class="skip" href="#main">Skip to content</a>
