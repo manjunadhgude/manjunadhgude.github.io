@@ -2988,7 +2988,7 @@ html.js main section.inview#contact h2{
     let raf = 0;
     let ready = false;
     let lastTick = 0;
-    const seekStep = 1 / 30; // Limit seek requests to about 30 updates per second.
+    const seekStep = 1 / 60; // Use smaller time steps for finer visual transitions.
 
     const getProgress = () => {
       const rect = hero.getBoundingClientRect();
@@ -3005,19 +3005,19 @@ html.js main section.inview#contact h2{
       raf = 0;
       if(!ready || !Number.isFinite(heroVideo.duration) || heroVideo.duration <= 0) return;
 
-      const elapsed = lastTick ? Math.min(50, now - lastTick) : 16.7;
+      const elapsed = lastTick ? Math.min(32, now - lastTick) : 16.7;
       lastTick = now;
 
       const end = endTime();
       targetTime = Math.min(end, Math.max(0, targetTime));
       const difference = targetTime - easedTime;
 
-      // About 95% of the distance is covered in a little over a quarter second.
+      // Doubled easing time for a noticeably softer, more cinematic response.
       // The same easing works in both scroll directions.
-      const blend = 1 - Math.exp(-elapsed / 88);
+      const blend = 1 - Math.exp(-elapsed / 176);
       easedTime += difference * blend;
 
-      if(Math.abs(targetTime - easedTime) < 0.006) easedTime = targetTime;
+      if(Math.abs(targetTime - easedTime) < 0.003) easedTime = targetTime;
 
       // Avoid flooding the decoder with seek requests; wait for the current seek
       // to finish before requesting the next eased frame.
@@ -3026,7 +3026,7 @@ html.js main section.inview#contact h2{
         try { heroVideo.currentTime = frameTime; } catch(e) {}
       }
 
-      if(Math.abs(targetTime - easedTime) >= 0.006 || heroVideo.seeking){
+      if(Math.abs(targetTime - easedTime) >= 0.003 || heroVideo.seeking){
         raf = requestAnimationFrame(animateScrub);
       }
     };
@@ -3050,7 +3050,7 @@ html.js main section.inview#contact h2{
     heroVideo.addEventListener('loadedmetadata', primeVideo, {once:true});
     heroVideo.addEventListener('loadeddata', requestSmoothScrub, {once:true});
     heroVideo.addEventListener('seeked', () => {
-      if(Math.abs(targetTime - easedTime) >= 0.006 && !raf){
+      if(Math.abs(targetTime - easedTime) >= 0.003 && !raf){
         raf = requestAnimationFrame(animateScrub);
       }
     });
