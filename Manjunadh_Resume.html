@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gude Manjunadh - Resume</title>
+<style>
+  @page { size: A4; margin: 0.10in 0.14in 0.10in; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    color: #111;
+    font-family: "Liberation Serif", "Times New Roman", serif;
+    font-size: 8.8pt;
+    line-height: 1.05;
+    font-weight: 400;
+  }
+  a { color: inherit; text-decoration: none; }
+  .page { width: 100%; }
+  .header { text-align: center; margin: 0 0 5pt; }
+  .name {
+    font-size: 21.5pt;
+    line-height: 1.02;
+    letter-spacing: 0.45pt;
+    font-variant: small-caps;
+    font-weight: 400;
+    margin: 0 0 3.0pt;
+  }
+  .contact-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1pt 7pt;
+    font-size: 7.8pt;
+    line-height: 1.05;
+  }
+  .contact-item { white-space: nowrap; display: inline-flex; align-items: center; gap: 2pt; }
+  .ico { display: inline-block; width: 7pt; height: 7pt; vertical-align: -1pt; }
+  .ico svg { display: block; width: 100%; height: 100%; }
+  .section { margin-top: 4.7pt; }
+  .section-title {
+    font-size: 9.2pt;
+    font-weight: 700;
+    line-height: 1.04;
+    text-transform: uppercase;
+    border-bottom: 0.7pt solid #111;
+    padding-bottom: 2pt;
+    margin: 0 0 3.0pt;
+  }
+  .summary { margin: 0; text-align: justify; line-height: 1.1; }
+  .entry { margin: 0 0 3.1pt; break-inside: avoid; }
+  .entry-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 5pt;
+    line-height: 1.03;
+    margin: 0;
+  }
+  .entry-title { font-size: 8.95pt; font-weight: 700; }
+  .entry-meta { font-size: 7.8pt; text-align: right; white-space: nowrap; flex-shrink: 0; }
+  /* Project titles and repository links use normal inline flow so a long title
+     wraps naturally without leaving the GitHub link stranded mid-line. */
+  .project-entry-head { display: block; }
+  .project-title-wrap { display: block; min-width: 0; }
+  .project-title-wrap .entry-title { display: inline; }
+  .project-link { display: inline; margin-left: 4.5pt; white-space: nowrap; font-size: 7.6pt; font-weight: 400; }
+  .project-link a { display: inline; text-decoration: underline; white-space: nowrap; }
+  .project-link-icon { display: inline-block; width: 7pt; height: 7pt; margin-right: 1pt; vertical-align: -1pt; }
+  .project-link-icon svg { display: block; width: 100%; height: 100%; }
+  .subline { font-size: 8.1pt; font-style: italic; line-height: 1.03; margin: 0.4pt 0 0.65pt; }
+  .subline .plain { font-style: normal; }
+  ul { margin: 0.7pt 0 1.0pt 10pt; padding: 0; list-style-type: disc; }
+  li { padding: 0; margin: 0 0 0.75pt; line-height: 1.04; }
+  .tech { margin: 0.5pt 0 1pt 1pt; font-size: 7.95pt; line-height: 1.06; font-style: italic; }
+  .tech strong { font-weight: 700; }
+  .skill-grid { display: block; }
+  .skill-row { display: grid; grid-template-columns: 155pt 1fr; column-gap: 3pt; margin: 0 0 1.0pt; font-size: 7.7pt; line-height: 1.04; }
+  .skill-label { font-weight: 700; line-height: 1.04; }
+  .skill-value { line-height: 1.04; }
+  .certs { line-height: 1.07; margin: 0; }
+  .leadership { margin: 1.5pt 0 0; line-height: 1.07; }
+  .education-row { margin: 0 0 2.5pt; break-inside: avoid; }
+  .education-row .entry-title { font-size: 8.25pt; }
+  .education-detail { display: flex; justify-content: space-between; gap: 8pt; margin-top: 0.2pt; line-height: 1.02; }
+  .education-detail .right { white-space: nowrap; text-align: right; }
+  .small { font-size: 7.25pt; }
+  .nowrap { white-space: nowrap; }
+  @media screen {
+    body { background: #eee; }
+    .page { background: white; width: 8.27in; min-height: 11.69in; margin: 12px auto; padding: 0.10in 0.14in 0.10in; box-shadow: 0 1px 8px #bbb; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <header class="header">
+    <h1 class="name">Gude Manjunadh</h1>
+    <div class="contact-line">
+      <span class="contact-item">
+        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57a1 1 0 0 1-.25 1.02z"/></svg></span>
+        <a href="tel:+919030446926">+91 9030446926</a>
+      </span>
+      <span class="contact-item">
+        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5L4 8V6l8 5 8-5z"/></svg></span>
+        <a href="mailto:manjunadhgude1@gmail.com">manjunadhgude1@gmail.com</a>
+      </span>
+      <span class="contact-item">
+        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM8.4 18H5.8V9.6h2.6zM7.1 8.45a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM18.2 18h-2.6v-4.1c0-.98-.02-2.25-1.37-2.25-1.38 0-1.59 1.07-1.59 2.18V18h-2.6V9.6h2.5v1.15h.04c.35-.66 1.2-1.36 2.47-1.36 2.64 0 3.13 1.74 3.13 4V18z"/></svg></span>
+        <a href="https://www.linkedin.com/in/manjunadh-gude/">LinkedIn</a>
+      </span>
+      <span class="contact-item">
+        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 .1.75 2.3 3.2 1.63.1-.72.4-1.22.7-1.5-2.5-.29-5.14-1.25-5.14-5.58 0-1.23.44-2.23 1.16-3.02-.12-.29-.5-1.44.11-2.99 0 0 .95-.3 3.08 1.15a10.7 10.7 0 0 1 5.6 0c2.13-1.45 3.08-1.15 3.08-1.15.61 1.55.23 2.7.11 2.99.72.79 1.16 1.79 1.16 3.02 0 4.34-2.65 5.29-5.17 5.57.41.36.77 1.04.77 2.1v3.13c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8z"/></svg></span>
+        <a href="https://github.com/manjunadhgude">GitHub</a>
+      </span>
+      <span class="contact-item">
+        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9.5"/><path d="M2.8 12h18.4M12 2.5c2.4 2.6 3.6 5.8 3.6 9.5S14.4 18.9 12 21.5C9.6 18.9 8.4 15.7 8.4 12S9.6 5.1 12 2.5Z"/></svg></span>
+        <a href="https://manjunadhgude.github.io/">Portfolio</a>
+      </span>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2 class="section-title">Professional Summary</h2>
+    <p class="summary"><strong>2026 Computer Science graduate focused on AI/ML and GenAI engineering</strong>, with hands-on experience building reliable LLM systems, fault-tolerant agent workflows, evidence-grounded document intelligence, temporal memory retrieval, and reproducible tool-calling evaluations using Python.</p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Work Experience</h2>
+    <article class="entry">
+      <div class="entry-head"><span class="entry-title">Artificial Intelligence Intern - SmartED Innovations</span><span class="entry-meta">Jul 2025 - Sep 2025</span></div>
+      <p class="subline">USNG LearnSpace EdTech Pvt Ltd <span class="plain">(Skill India &amp; NSDC accredited) · 2-month programme · batch “SmartED Jul 15, 2025”</span></p>
+      <ul>
+        <li>Month 1 - mentor-led training through live sessions and recorded content covering current industry trends, technical best practices, and professional skills.</li>
+        <li>Month 2 - hands-on research and development on minor and major projects against real-world problem statements, in teams, with continuous industry-mentor guidance.</li>
+        <li>Completed both components; issued Certificate of Internship Completion (Student ID AI1332, 23 Sep 2025) and Certificate of Course Completion (ID CCC1721, 29 Jan 2026).</li>
+      </ul>
+    </article>
+    <article class="entry">
+      <div class="entry-head"><span class="entry-title">MERN Full-Stack Developer Intern - Ethnus</span><span class="entry-meta">Jun 2024 - Jul 2024</span></div>
+      <ul>
+        <li>Developed a full-stack online quiz application using MongoDB, Express.js, React.js, and Node.js, with role-based features for students and administrators.</li>
+        <li>Implemented REST APIs, authentication, quiz management, dynamic questions, timed sessions, and automatic scoring.</li>
+        <li>Designed a responsive interface with streamlined quiz navigation and results, while optimizing MongoDB data retrieval and session management.</li>
+      </ul>
+      <p class="tech"><strong>Technologies / Skills Used:</strong> MongoDB, Express.js, React.js, Node.js, REST APIs, authentication</p>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Projects</h2>
+    <article class="entry">
+      <div class="entry-head project-entry-head"><span class="project-title-wrap"><span class="entry-title">AgentForge | Fault-Tolerant AI Agent Runtime</span><span class="project-link"><a href="https://github.com/manjunadhgude/AgentForge">GitHub (Private)</a></span></span></div>
+      <p class="tech"><strong>Stack:</strong> Python, LangGraph, FastAPI, PostgreSQL, SQLite, Pydantic, Pytest</p>
+      <ul>
+        <li>Reduced duplicate handler executions by <strong>80% (500 to 100)</strong> across 100 simulated actions with five delivery attempts each, using a persistent action ledger and replay safeguards.</li>
+        <li>Achieved <strong>100/100 transient-failure recoveries</strong> using bounded retries and persistent checkpoints; <strong>121 automated tests passed</strong> across workflows, persistence, approvals, recovery, and API behavior.</li>
+      </ul>
+    </article>
+    <article class="entry">
+      <div class="entry-head project-entry-head"><span class="project-title-wrap"><span class="entry-title">DocWeave | Evidence-Grounded Document Intelligence &amp; Reconciliation</span><span class="project-link"><a href="https://github.com/manjunadhgude/DocWeave">GitHub (Private)</a></span></span></div>
+      <p class="tech"><strong>Stack:</strong> Python, FastAPI, RAG, PostgreSQL, SQLAlchemy, BM25</p>
+      <ul>
+        <li>Built 2-way and 3-way procurement reconciliation across purchase orders, invoices, and goods receipts, detecting discrepancies with traceable field-level evidence.</li>
+        <li>Benchmarked three retrieval strategies on 13 synthetic queries and 10 evidence chunks; BM25 with query expansion achieved <strong>11/11 Recall@1, 11/11 Recall@3, and MRR 1.00</strong>. All <strong>164/164 tests passed</strong>.</li>
+      </ul>
+    </article>
+    <article class="entry">
+      <div class="entry-head project-entry-head"><span class="project-title-wrap"><span class="entry-title">MemoRoute | Temporal-Aware Memory Retrieval &amp; Context Engineering</span><span class="project-link"><a href="https://github.com/manjunadhgude/MemoRoute">GitHub</a></span></span></div>
+      <p class="tech"><strong>Stack:</strong> Python, SQLite, BM25, FastEmbed, BGE, Hybrid Retrieval, RRF</p>
+      <ul>
+        <li>Improved Recall@1 from <strong>56.25% to 75%</strong> and reached <strong>93.75% Recall@3</strong> on an 8-query benchmark; hybrid RRF achieved <strong>85.42% MRR</strong> versus 79.17% for BM25.</li>
+        <li>Validated temporal reasoning across 20 scenarios and 32 memory records with <strong>168/168 assessment checks complete</strong>; maintained 100% top-3 consistency across six RRF configurations and passed <strong>201 tests</strong>.</li>
+      </ul>
+    </article>
+    <article class="entry">
+      <div class="entry-head project-entry-head"><span class="project-title-wrap"><span class="entry-title">TuneBench | GenAI Tool-Calling, Reliability &amp; Evaluation Platform</span><span class="project-link"><a href="https://github.com/manjunadhgude/TuneBench">GitHub</a></span></span></div>
+      <p class="tech"><strong>Stack:</strong> Python, Qwen3-4B, llama.cpp, JSON Schema, Streamlit, pytest, GitHub Actions</p>
+      <ul>
+        <li>Engineered a CPU-run quantized Qwen3-4B workflow with schema-constrained generation, semantic tool-call review, and AST/Decimal refund validation; increased correct tool-call outcomes by <strong>5x</strong> on a matched 40-case synthetic benchmark.</li>
+        <li>Built reproducible evaluations with pinned model revisions, hashed datasets, and preserved traces; fixed a review-induced action-escalation defect and validated the application with <strong>561 passing automated tests</strong>.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Research Publications</h2>
+    <article class="entry">
+      <div class="entry-head"><span class="entry-title">Predicting Threatened Habitats Using Logistic Regression</span><span class="entry-meta">ICCCT 2024 · IEEE Xplore</span></div>
+      <ul>
+        <li>Built a logistic-regression model using air quality, water pollution, tree-cover loss, CO₂ emissions, urban population, and temperature data sourced from Global Forest Watch, the World Bank, WHO, and Kaggle.</li>
+        <li>Achieved <strong>93.55% classification accuracy</strong> using an 80/20 split and 5-fold cross-validation, creating an interpretable early-warning framework for conservation planning. <a href="https://ieeexplore.ieee.org/document/10984101"><u>IEEE Xplore</u></a></li>
+      </ul>
+    </article>
+    <article class="entry">
+      <div class="entry-head"><span class="entry-title">TrustAnchor: Layer-2 Blockchain Provenance for Pharmaceutical Supply Chains</span><span class="entry-meta">SASIGD 2026 · IEEE Xplore</span></div>
+      <ul>
+        <li>Designed an offline-first architecture integrating Polygon Layer 2, IPFS, RBAC smart contracts, W3C DID/Verifiable Credentials, and Ed25519 verification.</li>
+        <li>Achieved 0.770 ms median offline verification latency, 99.4% on-chain storage reduction, and $0.0008 single-batch anchoring cost; security tests detected QR replay and metadata tampering.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Skills</h2>
+    <div class="skill-grid">
+      <div class="skill-row"><span class="skill-label">Programming &amp; Languages :</span><span class="skill-value">Python, Java, JavaScript, TypeScript, R, SQL, HTML, CSS</span></div>
+      <div class="skill-row"><span class="skill-label">Backend :</span><span class="skill-value">FastAPI, Flask, Node.js, Express.js, REST APIs, SQLAlchemy, Pydantic, LangGraph, tool calling</span></div>
+      <div class="skill-row"><span class="skill-label">Frontend :</span><span class="skill-value">React.js</span></div>
+      <div class="skill-row"><span class="skill-label">Databases :</span><span class="skill-value">PostgreSQL, SQLite, MongoDB</span></div>
+      <div class="skill-row"><span class="skill-label">Tools &amp; Platforms :</span><span class="skill-value">Git, GitHub Actions, Docker, Ollama, llama.cpp, Streamlit, Alembic, pytest</span></div>
+      <div class="skill-row"><span class="skill-label">AI Frameworks &amp; Methods :</span><span class="skill-value">NLP, Qwen3-4B, RAG, BM25, BGE, FastEmbed, hybrid retrieval, Reciprocal Rank Fusion (RRF), model evaluation, JSON Schema</span></div>
+      <div class="skill-row"><span class="skill-label">Cloud Platforms :</span><span class="skill-value">AWS, Oracle Cloud Infrastructure GenAI</span></div>
+      <div class="skill-row"><span class="skill-label">Blockchain &amp; Security :</span><span class="skill-value">IPFS, Polygon Layer 2, RBAC, prompt-injection defense, W3C DID / Verifiable Credentials, Ed25519</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Certifications &amp; Leadership</h2>
+    <p class="certs"><strong><a href="https://drive.google.com/file/d/1bbxj_zOWatBncPb6032PNVWTzeoYqpmW/view?usp=sharing">AWS Certified Cloud Practitioner</a></strong> - Amazon (issued 27 Jul 2025) · <strong><a href="https://drive.google.com/file/d/1Q51qa_l8CZ3sxkOR3st_odRLV9_weRhG/view?usp=sharing">Oracle Cloud Infrastructure Generative AI Professional</a></strong> - Oracle Cloud (2025) · <strong><a href="https://drive.google.com/file/d/1ke7VKrg5jIxzcA6eh_7VKay11hVr8PSc/view?usp=sharing">MERN Full Stack</a></strong> - Ethnus (2024) · <a href="https://drive.google.com/file/d/1dww8ZLT5Pa8QIOZUjZXqF4skGmMbY4pl/view?usp=sharing"><strong>SmartED AI</strong> - Certificate of Internship Completion (AI1332) + Certificate of Course Completion (CCC1721) - Sep 2025 / Jan 2026.</a></p>
+    <p class="leadership"><strong>Marketing Team Lead, Climate Change Club - VIT-AP:</strong> Led a five-member team and strengthened campus outreach through coordinated sustainability campaigns and promotional content.</p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Education</h2>
+    <div class="education-row">
+      <div class="entry-head"><span class="entry-title">B.Tech, Computer Science and Engineering</span><span class="entry-meta">2022 - 2026</span></div>
+      <div class="education-detail"><span>Vellore Institute of Technology, Andhra Pradesh</span><span class="right"><strong>Cumulative GPA: 8.02/10.0</strong></span></div>
+    </div>
+    <div class="education-row">
+      <div class="entry-head"><span class="entry-title">Higher Secondary (10+2), MPC (Maths, Physics, Chemistry)</span><span class="entry-meta">Apr 2020 - Mar 2022</span></div>
+      <div class="education-detail"><span>Kendriya Vidyalaya No. 1, Vijayawada</span><span class="right">CGPA: 8.23</span></div>
+    </div>
+    <div class="education-row">
+      <div class="entry-head"><span class="entry-title">Secondary School (Class X)</span><span class="entry-meta">Apr 2019 - Mar 2020</span></div>
+      <div class="education-detail"><span>Kendriya Vidyalaya No. 1, Vijayawada</span><span class="right">CGPA: 8.95</span></div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
