@@ -2351,6 +2351,39 @@ html.js main section.inview#contact h2{
   }
 }
 </style>
+<style id="four-project-portfolio-layout">
+  .four-project-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;align-items:stretch}
+  .four-project-card{display:flex;flex-direction:column;min-width:0}
+  .four-project-card .project-visual{height:158px;min-height:158px}
+  .four-project-card .project-body{flex:1;display:flex;flex-direction:column}
+  .four-project-card .project-title{font-size:23px;line-height:1.12;overflow-wrap:anywhere}
+  .four-project-card .project-desc{min-height:74px}
+  .project-flow{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;align-items:center;flex:1;padding:18px 15px 26px}
+  .project-flow span{display:flex;align-items:center;justify-content:center;min-height:44px;padding:7px 5px;border:1px solid rgba(255,255,255,.12);border-radius:8px;background:rgba(10,15,22,.88);font:8px/1.35 var(--mono);letter-spacing:.045em;text-align:center;color:#e5edf8}
+  .flow-agentforge span{border-color:rgba(121,167,255,.35);color:#c4d9ff}
+  .flow-docweave span{border-color:rgba(130,226,200,.32);color:#b9f6e6}
+  .flow-memoroute span{border-color:rgba(179,154,255,.34);color:#d7caff}
+  .flow-tunebench span{border-color:rgba(240,184,107,.36);color:#ffe1ad}
+  .project-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:16px}
+  .project-metric{min-width:0;padding:10px 9px;border:1px solid var(--line);border-radius:8px;background:rgba(255,255,255,.018)}
+  .project-metric b{display:block;font:500 19px/1.05 var(--display);letter-spacing:-.035em;color:var(--text);overflow-wrap:anywhere}
+  .project-metric span{display:block;margin-top:5px;font:8px/1.35 var(--mono);color:var(--muted)}
+  .four-project-card:nth-child(1) .project-label,.four-project-card:nth-child(1) .project-metric b{color:var(--accent)}
+  .four-project-card:nth-child(2) .project-label,.four-project-card:nth-child(2) .project-metric b{color:var(--accent2)}
+  .four-project-card:nth-child(3) .project-label,.four-project-card:nth-child(3) .project-metric b{color:var(--violet)}
+  .four-project-card:nth-child(4) .project-label,.four-project-card:nth-child(4) .project-metric b{color:var(--warm)}
+  .four-project-card:nth-child(1){background:linear-gradient(180deg,rgba(121,167,255,.05),var(--panel) 26%)}
+  .four-project-card:nth-child(2){background:linear-gradient(180deg,rgba(130,226,200,.045),var(--panel) 26%)}
+  .four-project-card:nth-child(3){background:linear-gradient(180deg,rgba(179,154,255,.05),var(--panel) 26%)}
+  .four-project-card:nth-child(4){background:linear-gradient(180deg,rgba(240,184,107,.045),var(--panel) 26%)}
+  .project-repo-link{font:9px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--accent2);padding:9px 2px;white-space:nowrap}
+  .project-repo-link:hover{color:var(--text)}
+  .four-project-card .project-foot{margin-top:auto;padding-top:22px;flex-wrap:wrap}
+  @media(max-width:820px){.four-project-grid{grid-template-columns:1fr}.four-project-card .project-desc{min-height:0}}
+  @media(max-width:480px){.project-flow{gap:5px;padding-inline:10px}.project-flow span{font-size:7px;padding:6px 3px;min-height:42px}.project-metric{padding:8px 6px}.project-metric b{font-size:16px}.project-metric span{font-size:7px}}
+  @media(prefers-reduced-motion:reduce){.four-project-card .project-visual .pulse-dot{animation:none}}
+</style>
+
 </head>
 <body data-depth="recruiter">
 <a class="skip" href="#main">Skip to content</a>
@@ -2404,8 +2437,8 @@ html.js main section.inview#contact h2{
 
       <aside class="hero-index reveal" aria-label="Profile index">
         <div class="index-head"><span>Profile / 2026</span><span>01—04</span></div>
-        <div class="index-row"><span class="index-k">Focus</span><span class="index-v">Machine learning · computer vision<small>PPO · CLIP · GroundingDINO · SAM</small></span></div>
-        <div class="index-row"><span class="index-k">LLM Systems</span><span class="index-v">Tool use · controlled execution<small>Qwen3-1.7B · FastAPI · NF4 QLoRA</small></span></div>
+        <div class="index-row"><span class="index-k">Focus</span><span class="index-v">Agent reliability · retrieval systems<small>LangGraph · BM25 · BGE · RRF</small></span></div>
+        <div class="index-row"><span class="index-k">LLM Systems</span><span class="index-v">Constrained tool use · evaluation<small>Qwen3-4B · llama.cpp · JSON Schema</small></span></div>
         <div class="index-row"><span class="index-k">Research</span><span class="index-v">2 papers indexed in IEEE Xplore<small>ICCCT 2024 · SASIGD 2026</small></span></div>
         <div class="index-row"><span class="index-k">Education</span><span class="index-v">B.Tech CSE · VIT-AP<small>Cumulative GPA 8.02 / 10.0</small></span></div>
       </aside>
@@ -2414,10 +2447,10 @@ html.js main section.inview#contact h2{
     <div class="hero-bottom">
       <div class="signal-note">Built to make it easy to understand what I work on, how I approach problems, and where you can explore the details.</div>
       <div class="hero-metrics" aria-label="Selected evidence">
-        <div class="metric"><b>96.4%</b><span>LLM replay match</span></div>
-        <div class="metric"><b>94.4%</b><span>Copilot scenario pass</span></div>
-        <div class="metric"><b>29.6 ms</b><span>Local deterministic handling</span></div>
-        <div class="metric"><b>2</b><span>IEEE papers</span></div>
+        <div class="metric"><b>80%</b><span>Fewer duplicate executions · AgentForge</span></div>
+        <div class="metric"><b>100/100</b><span>Failure recoveries · AgentForge</span></div>
+        <div class="metric"><b>85.42%</b><span>Hybrid MRR · MemoRoute</span></div>
+        <div class="metric"><b>5×</b><span>Correct tool-call outcomes · TuneBench</span></div>
       </div>
     </div>
   </div>
@@ -2437,7 +2470,7 @@ html.js main section.inview#contact h2{
         <span class="orientation-k">BUILD</span>
         <h3>Intelligent systems</h3>
         <p>Software that turns language, audio, images or data into useful outputs — from an idea in a notebook to something people can actually use.</p>
-        <div class="orientation-example">Examples → tool-using LLM · evidence copilot · RL image editor</div>
+        <div class="orientation-example">Examples → AgentForge · DocWeave · MemoRoute · TuneBench</div>
       </article>
       <article class="orientation-card reveal">
         <span class="orientation-k">INVESTIGATE</span>
@@ -2460,9 +2493,8 @@ html.js main section.inview#contact h2{
   <div class="wrap">
     <div class="section-head">
       <div class="section-index">01 · SYSTEMS</div>
-      <div><h2>Selected work</h2><p>Three projects anchor the portfolio: a reinforcement-learning image editor, a tool-using LLM for business operations, and a secure evidence-grounded knowledge copilot. Each case study separates demonstrated results from limitations and next experiments.</p></div>
+      <div><h2>Selected work</h2><p>Four projects anchor the portfolio: a fault-tolerant agent runtime, evidence-grounded procurement reconciliation, temporal memory retrieval, and a reproducible GenAI tool-calling evaluation platform. Each case study separates measured results from evaluation scope and limitations.</p></div>
     </div>
-
     <div class="lensbar" id="lens">
       <div class="lens-info">Visitor lens / progressive disclosure</div>
       <div class="lens-buttons" role="tablist" aria-label="Information depth">
@@ -2471,238 +2503,118 @@ html.js main section.inview#contact h2{
         <button class="lens-btn" data-lens="researcher" role="tab">Researcher</button>
       </div>
     </div>
-
     <div class="depth-summary reveal" id="depthSummary">
-      <div><span class="paper-k">overview layer</span><strong>Identity · selected work · evidence</strong></div>
-      <p id="depthSummaryText">Get a quick sense of who I am, what I build and where the supporting evidence sits — then explore further when something interests you.</p>
+      <div><span class="paper-k">overview layer</span><strong>Four systems · measured results · inspectable evidence</strong></div>
+      <p id="depthSummaryText">Explore the four projects, then open a case study to inspect the architecture, implementation, evaluation design, results, and known limitations.</p>
     </div>
-
     <div class="system-stage reveal">
       <div class="system-top system-top-project">
-  <div class="system-project-identity">
-    <span class="system-project-index">PROJECT 01</span>
-    <div class="system-project-title">RL-Based Human-Centric Image Editing Model</div>
-    <div class="system-project-kind">Flagship project · Computer Vision + Reinforcement Learning</div>
-  </div>
-  <div class="system-map-context">
-    <span>Live project map</span>
-    <span id="systemStageLabel">HOW THIS PROJECT TURNS LANGUAGE INTO EDITS</span>
-  </div>
-</div>
+        <div class="system-project-identity">
+          <span class="system-project-index">PROJECT 01 · AGENTFORGE</span>
+          <div class="system-project-title">Fault-Tolerant AI Agent Runtime</div>
+          <div class="system-project-kind">Agent reliability · workflow orchestration + recovery</div>
+        </div>
+        <div class="system-map-context">
+          <span>Interactive runtime map</span>
+          <span id="systemStageLabel">CHECKPOINT → EXECUTE → RECORD → RECOVER</span>
+        </div>
+      </div>
       <div class="system-canvas-wrap">
-        <canvas id="systemCanvas" aria-label="Interactive portfolio system map"></canvas>
+        <canvas id="systemCanvas" aria-label="Interactive AgentForge runtime architecture map"></canvas>
         <div class="system-overlay">
           <div class="system-center">
-            <div class="k">Project 01 · RL image editor · current anchor</div>
-            <h3 id="systemTitle">RL-based human-centric image editing</h3>
-            <p id="systemDesc">Instruction → parse → detect → segment → edit, with CLIP reward and human feedback feeding a PPO policy.</p>
+            <div class="k">Project 01 · AgentForge · runtime control loop</div>
+            <h3 id="systemTitle">Fault-tolerant agent execution</h3>
+            <p id="systemDesc">Checkpoint workflow state, execute tools, record action outcomes, and recover after transient failures without repeating completed side effects.</p>
           </div>
         </div>
-        <div class="system-hot" id="systemHot">Click a node to inspect its role</div>
+        <div class="system-hot" id="systemHot">Select a node to inspect its role</div>
       </div>
-      <div class="system-caption"><span>Project 01 control loop · click nodes to see each stage</span><span>language → perception → action → reward → policy update</span></div>
+      <div class="system-caption"><span>AgentForge runtime loop · select nodes to inspect</span><span>checkpoint → tool → ledger → retry → recovery</span></div>
     </div>
-
-    <div class="work-grid">
-      <article class="project-card featured reveal">
-        <div class="project-body">
-          <div class="project-label">Featured · computer vision + reinforcement learning</div>
-          <div class="project-title">RL-Based Human-Centric Image Editing Model</div>
-          <div class="project-desc"><strong>In plain English:</strong> tell the system what to change in an image, and it tries to find the right object, edit the right pixels and learn from the quality of the result.</div>
-          <div class="tags"><span class="tag">PPO</span><span class="tag">CLIP</span><span class="tag">GroundingDINO</span><span class="tag">SAM</span><span class="tag">spaCy</span></div>
-          <div class="project-foot"><span class="tag">featured case study</span><button class="open-project" data-project="rl">Open case study →</button></div>
-        </div>
-        <div class="project-preview-lower">
-          <div class="project-visual preview-visual rl-workbench">
-            <div class="preview-topline">
-              <span>AI EDITOR · LIVE CONCEPT</span>
-              <span><i class="status-dot"></i> DEMO LOOP</span>
-            </div>
-            <svg class="rl-workbench-svg rl-preview-v2" viewBox="0 0 900 420" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-  <defs>
-    <linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0d1622"/><stop offset="1" stop-color="#070a0f"/>
-    </linearGradient>
-    <linearGradient id="skyBefore" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#516f96"/><stop offset="1" stop-color="#203144"/>
-    </linearGradient>
-    <linearGradient id="skyAfter" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#d78d72"/><stop offset="0.58" stop-color="#9d665b"/><stop offset="1" stop-color="#27303b"/>
-    </linearGradient>
-    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#273b2d"/><stop offset="1" stop-color="#101713"/>
-    </linearGradient>
-    <linearGradient id="coatBefore" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#c77958"/><stop offset="1" stop-color="#884a3d"/>
-    </linearGradient>
-    <linearGradient id="coatAfter" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#5c9cf4"/><stop offset="1" stop-color="#244f9e"/>
-    </linearGradient>
-    <linearGradient id="accentLine" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7aa2ff"/><stop offset="1" stop-color="#8ee6cf"/>
-    </linearGradient>
-    <pattern id="grain" width="22" height="22" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="5" r=".65" fill="#ffffff" opacity=".07"/><circle cx="14" cy="16" r=".55" fill="#ffffff" opacity=".05"/><circle cx="19" cy="7" r=".45" fill="#ffffff" opacity=".05"/>
-    </pattern>
-    <clipPath id="beforeClip"><rect x="26" y="92" width="390" height="216" rx="14"/></clipPath>
-    <clipPath id="afterClip"><rect x="484" y="92" width="390" height="216" rx="14"/></clipPath>
-  </defs>
-
-  <rect width="900" height="420" fill="url(#pbg)"/>
-  <path d="M0 72H900" stroke="#202b39"/>
-
-  <!-- command -->
-  <g class="pv-command">
-    <rect x="120" y="18" width="660" height="42" rx="11" fill="#0b121b" stroke="#314052"/>
-    <circle cx="143" cy="39" r="6" fill="#8ee6cf"/>
-    <text x="161" y="36" fill="#64758a" font-size="8" font-family="DM Mono" letter-spacing="1.6">NATURAL-LANGUAGE INSTRUCTION</text>
-    <text x="161" y="53" fill="#f1f5fb" font-size="13" font-family="Inter">“Make the jacket blue.”</text>
-    <text x="754" y="45" fill="#7aa2ff" font-size="8" font-family="DM Mono" text-anchor="end">AGENT REQUEST</text>
-  </g>
-
-  <!-- before image -->
-  <g class="pv-panel pv-before">
-    <rect x="20" y="84" width="402" height="236" rx="16" fill="#0a0f16" stroke="#2a3749"/>
-    <g clip-path="url(#beforeClip)">
-      <rect x="26" y="92" width="390" height="216" fill="url(#skyBefore)"/>
-      <circle cx="358" cy="138" r="31" fill="#d9dee7" opacity=".18"/>
-      <path d="M26 226 Q92 165 155 223 T280 214 T416 196V308H26Z" fill="#1f3023"/>
-      <path d="M26 244 Q130 197 226 242 T416 230V308H26Z" fill="url(#ground)"/>
-      <ellipse cx="205" cy="284" rx="82" ry="16" fill="#05080c" opacity=".38"/>
-      <!-- subject -->
-      <circle cx="204" cy="161" r="22" fill="#6f5a52"/>
-      <path d="M171 194 Q204 171 237 194 L250 270 Q204 289 158 270Z" fill="url(#coatBefore)"/>
-      <path d="M176 208 L144 259M232 208 L265 258" stroke="#6f5a52" stroke-width="12" stroke-linecap="round"/>
-      <rect x="26" y="92" width="390" height="216" fill="url(#grain)"/>
-    </g>
-    <text x="40" y="108" fill="#7a8a9d" font-size="8" font-family="DM Mono" letter-spacing="1.7">SOURCE</text>
-    <text x="40" y="294" fill="#c4ced9" font-size="8" font-family="DM Mono">portrait_014.png</text>
-    <!-- target detection -->
-    <rect class="pv-target" x="156" y="188" width="96" height="94" rx="12" fill="none" stroke="#7aa2ff" stroke-width="2" stroke-dasharray="8 6"/>
-    <path d="M156 205V188H173M235 188H252V205M156 265V282H173M235 282H252V265" fill="none" stroke="#8ee6cf" stroke-width="2" class="pv-corners"/>
-    <rect x="162" y="286" width="92" height="17" rx="5" fill="#0c1721" stroke="#2e445a"/>
-    <text x="173" y="298" fill="#8ee6cf" font-size="7" font-family="DM Mono">TARGET · JACKET</text>
-  </g>
-
-  <!-- center reasoning -->
-  <g class="pv-center">
-    <path class="pv-arrows" d="M428 197H460" stroke="#7aa2ff" stroke-width="2" stroke-dasharray="5 7"/>
-    <path d="M455 191 L465 197 L455 203" fill="none" stroke="#7aa2ff" stroke-width="2"/>
-    <rect x="426" y="213" width="48" height="26" rx="8" fill="#0d1720" stroke="#314153"/>
-    <text x="450" y="230" fill="#8ee6cf" font-size="7" font-family="DM Mono" text-anchor="middle">EDIT</text>
-  </g>
-
-  <!-- after image -->
-  <g class="pv-panel pv-after">
-    <rect x="478" y="84" width="402" height="236" rx="16" fill="#0a0f16" stroke="#2a3749"/>
-    <g clip-path="url(#afterClip)">
-      <rect x="484" y="92" width="390" height="216" fill="url(#skyAfter)"/>
-      <circle cx="816" cy="145" r="34" fill="#f6c184" opacity=".28"/>
-      <path d="M484 226 Q550 165 613 223 T738 214 T874 196V308H484Z" fill="#27342c"/>
-      <path d="M484 244 Q588 197 684 242 T874 230V308H484Z" fill="url(#ground)"/>
-      <ellipse cx="663" cy="284" rx="82" ry="16" fill="#05080c" opacity=".42"/>
-      <circle cx="662" cy="161" r="22" fill="#6f5a52"/>
-      <path d="M629 194 Q662 171 695 194 L708 270 Q662 289 616 270Z" fill="url(#coatAfter)" class="pv-shirt"/>
-      <path d="M634 208 L602 259M690 208 L723 258" stroke="#6f5a52" stroke-width="12" stroke-linecap="round"/>
-      <rect x="484" y="92" width="390" height="216" fill="url(#grain)"/>
-      <rect class="pv-scanline" x="484" y="146" width="390" height="2" fill="#8ee6cf" opacity=".5"/>
-    </g>
-    <text x="498" y="108" fill="#8ee6cf" font-size="8" font-family="DM Mono" letter-spacing="1.7">EDITED OUTPUT</text>
-    <text x="498" y="294" fill="#d3dde8" font-size="8" font-family="DM Mono">jacket → blue</text>
-    <rect class="pv-output-frame" x="616" y="188" width="96" height="94" rx="12" fill="none" stroke="#8ee6cf" stroke-width="1.6"/>
-    <rect x="622" y="286" width="93" height="17" rx="5" fill="#10221e" stroke="#315e53"/>
-    <text x="633" y="298" fill="#8ee6cf" font-size="7" font-family="DM Mono">EDIT APPLIED</text>
-  </g>
-
-  <!-- reasoning strip -->
-  <g transform="translate(20 334)">
-    <rect width="860" height="58" rx="11" fill="#0a1017" stroke="#243142"/>
-    <g font-family="DM Mono">
-      <circle cx="22" cy="29" r="8" fill="#132039" stroke="#7aa2ff"/><text x="22" y="32" fill="#7aa2ff" font-size="7" text-anchor="middle">01</text>
-      <text x="38" y="26" fill="#e7edf5" font-size="8">UNDERSTAND</text><text x="38" y="39" fill="#69798d" font-size="7">instruction</text>
-      <path d="M155 29H184" stroke="#39495d"/>
-      <circle cx="208" cy="29" r="8" fill="#102620" stroke="#8ee6cf"/><text x="208" y="32" fill="#8ee6cf" font-size="7" text-anchor="middle">02</text>
-      <text x="224" y="26" fill="#e7edf5" font-size="8">GROUND</text><text x="224" y="39" fill="#69798d" font-size="7">find target</text>
-      <path d="M325 29H354" stroke="#39495d"/>
-      <circle cx="378" cy="29" r="8" fill="#291e13" stroke="#e9b56f"/><text x="378" y="32" fill="#e9b56f" font-size="7" text-anchor="middle">03</text>
-      <text x="394" y="26" fill="#e7edf5" font-size="8">EDIT</text><text x="394" y="39" fill="#69798d" font-size="7">change pixels</text>
-      <path d="M470 29H500" stroke="#39495d"/>
-      <circle cx="524" cy="29" r="8" fill="#102620" stroke="#8ee6cf"/><text x="524" y="32" fill="#8ee6cf" font-size="7" text-anchor="middle">04</text>
-      <text x="540" y="26" fill="#e7edf5" font-size="8">SCORE</text><text x="540" y="39" fill="#69798d" font-size="7">CLIP + human feedback</text>
-      <rect x="700" y="18" width="148" height="21" rx="6" fill="#0f171f" stroke="#2b3949"/>
-      <text x="713" y="32" fill="#68788b" font-size="7">REWARD</text>
-      <rect x="758" y="26" width="56" height="3" rx="1.5" fill="#1e2b38"/>
-      <rect class="pv-reward" x="758" y="26" width="43" height="3" rx="1.5" fill="url(#accentLine)"/>
-      <text x="836" y="32" fill="#8ee6cf" font-size="7" text-anchor="end">0.86</text>
-    </g>
-  </g>
-  <text x="24" y="410" fill="#596779" font-size="7.5" font-family="DM Mono" letter-spacing="1.5">CONCEPTUAL PRODUCT PREVIEW · SHOWING THE INTENDED AGENT FLOW, NOT A LIVE MODEL RUN</text>
-</svg>
-            <div class="preview-badge"><span class="pulse-dot"></span> hover to inspect the editor flow</div>
+    <div class="work-grid four-project-grid">
+      <article class="project-card four-project-card reveal" data-project-card="agentforge">
+        <div class="project-visual preview-visual">
+          <div class="preview-topline"><span>AGENTFORGE · FAULT-TOLERANT RUNTIME</span><span>RECOVERY PATH</span></div>
+          <div class="project-flow flow-agentforge">
+            <span>CHECKPOINT</span><span>TOOL CALL</span><span>ACTION LEDGER</span><span>RECOVER</span>
           </div>
-        </div>
-      </article>
-
-      <article class="project-card reveal">
-        <div class="project-visual preview-visual project-agent-preview">
-          <div class="preview-topline"><span>LLM AGENT · CONTROLLED TOOL USE</span><span><i class="pulse-dot"></i> EVALUATION MODE</span></div>
-          <svg viewBox="0 0 700 300" role="img" aria-label="LLM agent orchestration map showing request, model, six tools, safeguards and approved execution">
-            <defs><linearGradient id="agentGlow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#172a45"/><stop offset="1" stop-color="#0a111b"/></linearGradient><linearGradient id="agentLine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7aa2ff"/><stop offset="1" stop-color="#8ee6cf"/></linearGradient></defs>
-            <rect width="700" height="300" fill="#070b11"/>
-            <g stroke="#162130" stroke-width="1"><path d="M0 50H700M0 100H700M0 150H700M0 200H700M0 250H700"/><path d="M50 0V300M100 0V300M150 0V300M200 0V300M250 0V300M300 0V300M350 0V300M400 0V300M450 0V300M500 0V300M550 0V300M600 0V300M650 0V300"/></g>
-            <path d="M110 144H190M305 144H365M480 144H550" stroke="url(#agentLine)" stroke-width="2" fill="none" stroke-dasharray="5 5"/>
-            <path d="M183 138L191 144L183 150M358 138L366 144L358 150M543 138L551 144L543 150" fill="none" stroke="#8ee6cf" stroke-width="2"/>
-            <rect x="24" y="112" width="86" height="64" rx="10" fill="#0d1723" stroke="#334963"/><text x="67" y="135" text-anchor="middle" fill="#8aa0ba" font-size="9" font-family="DM Mono">REQUEST</text><text x="67" y="153" text-anchor="middle" fill="#edf3ff" font-size="12" font-family="Inter">Intent</text>
-            <rect x="190" y="94" width="115" height="100" rx="12" fill="url(#agentGlow)" stroke="#7aa2ff"/><circle cx="247" cy="119" r="7" fill="#7aa2ff"/><text x="247" y="142" text-anchor="middle" fill="#f3f7ff" font-size="12" font-family="Inter">Qwen3-1.7B</text><text x="247" y="160" text-anchor="middle" fill="#92a2b6" font-size="9" font-family="DM Mono">TOOL CALLS</text><text x="247" y="175" text-anchor="middle" fill="#8ee6cf" font-size="8" font-family="DM Mono">NF4 QLoRA</text>
-            <rect x="366" y="92" width="114" height="104" rx="12" fill="#10151e" stroke="#38594f"/><text x="423" y="112" text-anchor="middle" fill="#8ee6cf" font-size="9" font-family="DM Mono">6 BUSINESS TOOLS</text>
-            <g font-family="DM Mono" font-size="8" fill="#aab7c7"><rect x="379" y="122" width="40" height="20" rx="5" fill="#14221f" stroke="#315b51"/><text x="399" y="135" text-anchor="middle">TOOL 01</text><rect x="427" y="122" width="40" height="20" rx="5" fill="#14221f" stroke="#315b51"/><text x="447" y="135" text-anchor="middle">TOOL 02</text><rect x="379" y="150" width="40" height="20" rx="5" fill="#14221f" stroke="#315b51"/><text x="399" y="163" text-anchor="middle">TOOL 03</text><rect x="427" y="150" width="40" height="20" rx="5" fill="#14221f" stroke="#315b51"/><text x="447" y="163" text-anchor="middle">+ 3</text></g>
-            <rect x="550" y="112" width="126" height="64" rx="10" fill="#12201d" stroke="#3d7d69"/><text x="613" y="134" text-anchor="middle" fill="#8ee6cf" font-size="9" font-family="DM Mono">SAFE EXECUTION</text><text x="613" y="153" text-anchor="middle" fill="#f3fff9" font-size="11" font-family="Inter">Approval gate</text>
-            <rect x="178" y="218" width="145" height="36" rx="8" fill="#0c131d" stroke="#29384c"/><text x="250" y="233" text-anchor="middle" fill="#99a9bd" font-size="8" font-family="DM Mono">TENANT ISOLATION</text><text x="250" y="246" text-anchor="middle" fill="#c9d6e8" font-size="9" font-family="Inter">Prompt-injection defense</text>
-            <rect x="371" y="218" width="174" height="36" rx="8" fill="#0c131d" stroke="#29384c"/><text x="458" y="233" text-anchor="middle" fill="#99a9bd" font-size="8" font-family="DM Mono">PERSISTENCE + TRACE</text><text x="458" y="246" text-anchor="middle" fill="#c9d6e8" font-size="9" font-family="Inter">PostgreSQL · Docker</text>
-            <path d="M247 194V207H250V218M423 196V207H458V218" fill="none" stroke="#3e526c" stroke-width="1.2"/>
-            <text x="26" y="28" fill="#60758d" font-family="DM Mono" font-size="9" letter-spacing="1.2">REQUEST → MODEL → TOOLS → GUARDED ACTION</text>
-            <text x="674" y="284" text-anchor="end" fill="#526276" font-family="DM Mono" font-size="8">SCHEMATIC · NOT A LIVE BACKEND</text>
-          </svg>
-          <span class="preview-badge"><i class="pulse-dot"></i> 8/8 predefined real-model workflows passed</span>
+          <div class="preview-badge"><i class="pulse-dot"></i> replay-safe execution</div>
         </div>
         <div class="project-body">
-          <div class="project-label">GenAI engineering · tool use + fine-tuning</div>
-          <div class="project-title">Reliable Tool-Using LLM for Business Operations</div>
-          <div class="project-desc"><strong>In plain English:</strong> a full-stack LLM agent connects a language model to six business tools, while tenant isolation, prompt-injection defenses and human approval help keep important actions controlled.</div>
-          <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Qwen3-1.7B</span><span class="tag">NF4 QLoRA</span><span class="tag">PostgreSQL</span><span class="tag">Tool Calling</span><span class="tag">React.js</span><span class="tag">TypeScript</span><span class="tag">Docker</span></div>
-          <div class="project-foot"><span class="tag">96.4% · controller replay</span><button class="open-project" data-project="agent">Open case study →</button></div>
+          <div class="project-label">AI engineering · agent reliability</div>
+          <div class="project-title">AgentForge | Fault-Tolerant AI Agent Runtime</div>
+          <div class="project-desc">A runtime for tool-using agents that can resume after transient failures. Persistent checkpoints, bounded retries, an action ledger, and replay safeguards help prevent duplicate side effects.</div>
+          <div class="project-metrics">
+            <div class="project-metric"><b>80%</b><span>fewer duplicate handler executions</span></div>
+            <div class="project-metric"><b>100/100</b><span>transient-failure recoveries</span></div>
+            <div class="project-metric"><b>121</b><span>automated tests passed in CI</span></div>
+          </div>
+          <div class="tags"><span class="tag">Python</span><span class="tag">LangGraph</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">SQLite</span><span class="tag">Pydantic</span><span class="tag">Pytest</span></div>
+          <div class="project-foot"><span class="tag">Repository · private</span><button class="open-project" data-project="agentforge">Explore case study →</button></div>
         </div>
       </article>
-
-      <article class="project-card reveal">
-        <div class="project-visual preview-visual project-copilot-preview">
-          <div class="preview-topline"><span>KNOWLEDGE COPILOT · EVIDENCE PATH</span><span><i class="pulse-dot"></i> RETRIEVAL CHECK</span></div>
-          <svg viewBox="0 0 700 300" role="img" aria-label="RAG knowledge copilot flow from question through hybrid retrieval, access control and grounded answer or abstention">
-            <defs><linearGradient id="ragLine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b39aff"/><stop offset="1" stop-color="#8ee6cf"/></linearGradient></defs>
-            <rect width="700" height="300" fill="#070b11"/>
-            <g stroke="#162130" stroke-width="1"><path d="M0 50H700M0 100H700M0 150H700M0 200H700M0 250H700"/><path d="M50 0V300M100 0V300M150 0V300M200 0V300M250 0V300M300 0V300M350 0V300M400 0V300M450 0V300M500 0V300M550 0V300M600 0V300M650 0V300"/></g>
-            <text x="25" y="28" fill="#667891" font-family="DM Mono" font-size="9" letter-spacing="1.2">RETRIEVE EVIDENCE BEFORE GENERATING AN ANSWER</text>
-            <rect x="25" y="90" width="100" height="74" rx="10" fill="#141225" stroke="#51487c"/><text x="75" y="116" text-anchor="middle" fill="#b9a8ff" font-size="9" font-family="DM Mono">QUESTION</text><text x="75" y="138" text-anchor="middle" fill="#f4f0ff" font-size="11" font-family="Inter">User query</text>
-            <path d="M125 127H151" stroke="url(#ragLine)" stroke-width="2"/><path d="M145 121L152 127L145 133" stroke="#8ee6cf" fill="none" stroke-width="2"/>
-            <rect x="153" y="75" width="142" height="104" rx="11" fill="#11151f" stroke="#554e81"/><text x="224" y="97" text-anchor="middle" fill="#b9a8ff" font-size="9" font-family="DM Mono">HYBRID RETRIEVAL</text><rect x="166" y="110" width="116" height="23" rx="6" fill="#1a1830" stroke="#4a426f"/><text x="224" y="125" text-anchor="middle" fill="#dfd8ff" font-family="Inter" font-size="10">Search + ranking</text><rect x="166" y="141" width="116" height="23" rx="6" fill="#121e20" stroke="#315e53"/><text x="224" y="156" text-anchor="middle" fill="#a6ead7" font-family="Inter" font-size="10">Evidence snippets</text>
-            <path d="M295 127H323" stroke="url(#ragLine)" stroke-width="2"/><path d="M317 121L324 127L317 133" stroke="#8ee6cf" fill="none" stroke-width="2"/>
-            <rect x="325" y="89" width="118" height="76" rx="10" fill="#111b1b" stroke="#3b6c5c"/><text x="384" y="111" text-anchor="middle" fill="#8ee6cf" font-size="9" font-family="DM Mono">VALIDATION</text><text x="384" y="130" text-anchor="middle" fill="#edf8f4" font-size="11" font-family="Inter">RBAC + tests</text><text x="384" y="147" text-anchor="middle" fill="#9fb7b0" font-size="9" font-family="DM Mono">confidence check</text>
-            <path d="M443 127H471" stroke="url(#ragLine)" stroke-width="2"/><path d="M465 121L472 127L465 133" stroke="#8ee6cf" fill="none" stroke-width="2"/>
-            <rect x="473" y="67" width="202" height="52" rx="9" fill="#10211d" stroke="#3d7d69"/><circle cx="490" cy="84" r="4" fill="#8ee6cf"/><text x="503" y="88" fill="#8ee6cf" font-family="DM Mono" font-size="9">SUPPORTED</text><text x="491" y="105" fill="#f1fff9" font-family="Inter" font-size="11">Evidence-grounded answer</text>
-            <rect x="473" y="137" width="202" height="52" rx="9" fill="#21161b" stroke="#7b4852"/><circle cx="490" cy="154" r="4" fill="#e98282"/><text x="503" y="158" fill="#e9a0a8" font-family="DM Mono" font-size="9">INSUFFICIENT EVIDENCE</text><text x="491" y="176" fill="#fff2f3" font-family="Inter" font-size="11">Abstain instead</text>
-            <path d="M384 165V212H470V163" stroke="#3d655d" stroke-width="1.2" stroke-dasharray="4 5" fill="none"/>
-            <rect x="153" y="218" width="142" height="35" rx="7" fill="#0c131d" stroke="#29384c"/><text x="224" y="232" text-anchor="middle" fill="#99a9bd" font-size="8" font-family="DM Mono">LOCAL DATA</text><text x="224" y="245" text-anchor="middle" fill="#c9d6e8" font-size="9" font-family="Inter">SQLite · RBAC</text>
-            <rect x="325" y="218" width="180" height="35" rx="7" fill="#0c131d" stroke="#29384c"/><text x="415" y="232" text-anchor="middle" fill="#99a9bd" font-size="8" font-family="DM Mono">EVALUATION</text><text x="415" y="245" text-anchor="middle" fill="#c9d6e8" font-size="9" font-family="Inter">Recall@3 · automated tests</text>
-            <text x="674" y="284" text-anchor="end" fill="#526276" font-family="DM Mono" font-size="8">SCHEMATIC · NOT A LIVE QUERY</text>
-          </svg>
-          <span class="preview-badge"><i class="pulse-dot"></i> 27/27 automated tests passed</span>
+      <article class="project-card four-project-card reveal" data-project-card="docweave">
+        <div class="project-visual preview-visual">
+          <div class="preview-topline"><span>DOCWEAVE · DOCUMENT INTELLIGENCE</span><span>RECONCILIATION</span></div>
+          <div class="project-flow flow-docweave">
+            <span>PURCHASE ORDER</span><span>INVOICE</span><span>GOODS RECEIPT</span><span>FIELD EVIDENCE</span>
+          </div>
+          <div class="preview-badge"><i class="pulse-dot"></i> evidence-linked discrepancy review</div>
         </div>
         <div class="project-body">
-          <div class="project-label">Enterprise GenAI · RAG + evidence grounding</div>
-          <div class="project-title">Adaptive Enterprise Knowledge &amp; Evidence Copilot</div>
-          <div class="project-desc"><strong>In plain English:</strong> a support copilot retrieves relevant policy evidence, builds evidence-grounded answers, respects role-based access, and abstains when the evidence is not strong enough.</div>
-          <div class="tags"><span class="tag">Python</span><span class="tag">RAG</span><span class="tag">Hybrid Retrieval</span><span class="tag">Evidence Grounding</span><span class="tag">Abstention</span><span class="tag">RBAC</span><span class="tag">SQLite</span><span class="tag">GitHub Actions</span></div>
-          <div class="project-foot"><span class="tag">94.4% · synthetic scenarios</span><button class="open-project" data-project="copilot">Open case study →</button></div>
+          <div class="project-label">Document intelligence · procurement reconciliation</div>
+          <div class="project-title">DocWeave | Evidence-Grounded Document Intelligence</div>
+          <div class="project-desc">A document pipeline for 2-way and 3-way procurement reconciliation. It compares purchase orders, invoices, and goods receipts, then exposes discrepancies with traceable field-level evidence.</div>
+          <div class="project-metrics">
+            <div class="project-metric"><b>100%</b><span>Recall@1 and Recall@3 · 11/11</span></div>
+            <div class="project-metric"><b>1.00</b><span>MRR · rank-1 contribution</span></div>
+            <div class="project-metric"><b>164/164</b><span>automated tests passed</span></div>
+          </div>
+          <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">RAG</span><span class="tag">PostgreSQL</span><span class="tag">SQLAlchemy</span><span class="tag">BM25</span></div>
+          <div class="project-foot"><span class="tag">Repository · private</span><button class="open-project" data-project="docweave">Explore case study →</button></div>
+        </div>
+      </article>
+      <article class="project-card four-project-card reveal" data-project-card="memoroute">
+        <div class="project-visual preview-visual">
+          <div class="preview-topline"><span>MEMOROUTE · CONTEXT ENGINEERING</span><span>TEMPORAL RETRIEVAL</span></div>
+          <div class="project-flow flow-memoroute">
+            <span>MEMORY STORE</span><span>TEMPORAL LINKS</span><span>HYBRID RANKING</span><span>SELECT CONTEXT</span>
+          </div>
+          <div class="preview-badge"><i class="pulse-dot"></i> time-aware memory selection</div>
+        </div>
+        <div class="project-body">
+          <div class="project-label">Memory systems · temporal-aware retrieval</div>
+          <div class="project-title">MemoRoute | Temporal-Aware Memory Retrieval &amp; Context Engineering Engine</div>
+          <div class="project-desc">A context-engineering engine combining temporal memory modeling with sparse, dense, and hybrid retrieval to select useful evidence for downstream LLM context.</div>
+          <div class="project-metrics">
+            <div class="project-metric"><b>75%</b><span>Recall@1 · up from 56.25%</span></div>
+            <div class="project-metric"><b>85.42%</b><span>MRR · BGE + hybrid RRF</span></div>
+            <div class="project-metric"><b>201</b><span>automated tests passed</span></div>
+          </div>
+          <div class="tags"><span class="tag">Python</span><span class="tag">SQLite</span><span class="tag">BM25</span><span class="tag">FastEmbed</span><span class="tag">BGE</span><span class="tag">Hybrid Retrieval</span><span class="tag">RRF</span></div>
+          <div class="project-foot"><a class="project-repo-link" href="https://github.com/manjunadhgude/MemoRoute" target="_blank" rel="noopener">GitHub ↗</a><button class="open-project" data-project="memoroute">Explore case study →</button></div>
+        </div>
+      </article>
+      <article class="project-card four-project-card reveal" data-project-card="tunebench">
+        <div class="project-visual preview-visual">
+          <div class="preview-topline"><span>TUNEBENCH · GENAI EVALUATION</span><span>CPU INFERENCE</span></div>
+          <div class="project-flow flow-tunebench">
+            <span>QWEN3-4B</span><span>JSON SCHEMA</span><span>SEMANTIC REVIEW</span><span>SAFE VALIDATION</span>
+          </div>
+          <div class="preview-badge"><i class="pulse-dot"></i> reproducible tool-call evaluation</div>
+        </div>
+        <div class="project-body">
+          <div class="project-label">GenAI systems · tool-calling reliability + evaluation</div>
+          <div class="project-title">TuneBench | GenAI Tool-Calling, Reliability &amp; Evaluation Platform</div>
+          <div class="project-desc">A CPU-first Qwen3-4B workflow with schema-constrained generation, semantic tool-call review, and deterministic AST/Decimal refund validation, supported by reproducible traces and a Streamlit demo.</div>
+          <div class="project-metrics">
+            <div class="project-metric"><b>5×</b><span>correct tool-call outcomes</span></div>
+            <div class="project-metric"><b>40</b><span>matched synthetic cases</span></div>
+            <div class="project-metric"><b>561</b><span>automated tests passed</span></div>
+          </div>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Qwen3-4B</span><span class="tag">llama.cpp</span><span class="tag">JSON Schema</span><span class="tag">Streamlit</span><span class="tag">pytest</span><span class="tag">GitHub Actions</span></div>
+          <div class="project-foot"><a class="project-repo-link" href="https://github.com/manjunadhgude/TuneBench" target="_blank" rel="noopener">GitHub ↗</a><button class="open-project" data-project="tunebench">Explore case study →</button></div>
         </div>
       </article>
     </div>
@@ -2712,22 +2624,22 @@ html.js main section.inview#contact h2{
 <section id="evidence" data-state="evidence">
   <div class="macro-line"></div><div class="section-marker">02</div>
   <div class="wrap">
-    <div class="section-head"><div class="section-index">02 · EVIDENCE</div><div><h2>A closer look at the results</h2><p>Metrics are shown in context so it is easy to understand what each result measures and which project or paper it belongs to.</p></div></div>
+    <div class="section-head"><div class="section-index">02 · EVIDENCE</div><div><h2>A closer look at the results</h2><p>Each result is paired with its project and evaluation scope. The test-count chart shows automated checks passed, not a cross-project quality ranking.</p></div></div>
     <div class="evidence-grid">
       <div class="evidence-panel">
-        <div class="panel-head"><span>selected reported metrics</span><span>contextual comparison</span></div>
-        <div class="chart-area"><canvas id="evidenceChart" aria-label="Chart of reported portfolio metrics"></canvas></div>
-        <div class="evidence-note">These results come from different evaluation setups and should not be compared as if they were one benchmark. The case studies state each evaluation’s size and scope.</div>
+        <div class="panel-head"><span>automated test cases passed</span><span>four current projects</span></div>
+        <div class="chart-area"><canvas id="evidenceChart" aria-label="Automated test cases passed by project"></canvas></div>
+        <div class="evidence-note">Suite sizes differ. These counts show the number of reported passing tests in each project; they do not compare pass rates, benchmark difficulty, or overall project quality.</div>
       </div>
       <div class="evidence-panel">
-        <div class="panel-head"><span>evidence ledger</span><span>source-linked</span></div>
+        <div class="panel-head"><span>evidence ledger</span><span>project-linked metrics</span></div>
         <div class="evidence-list">
-          <div class="evidence-item"><b>96.4%</b><span>LLM controller replay · 27/28 exact matches</span></div>
-          <div class="evidence-item"><b>94.4%</b><span>Copilot evaluation · 18 synthetic scenarios</span></div>
-          <div class="evidence-item"><b>100%</b><span>Recall@3 · 6 retrieval queries</span></div>
-          <div class="evidence-item"><b>27/27</b><span>Copilot automated tests passed</span></div>
+          <div class="evidence-item"><b>80%</b><span>AgentForge · fewer duplicate handler executions (500 → 100)</span></div>
+          <div class="evidence-item"><b>11/11</b><span>DocWeave · Recall@1 and Recall@3; MRR 1.00</span></div>
+          <div class="evidence-item"><b>85.42%</b><span>MemoRoute · MRR with BGE + hybrid RRF</span></div>
+          <div class="evidence-item"><b>5×</b><span>TuneBench · correct tool-call outcomes on a matched 40-case benchmark</span></div>
         </div>
-        <div class="evidence-note">Use the research and project explorer to understand what each number refers to before interpreting it.</div>
+        <div class="evidence-note">Open each project case study for methodology, dataset or scenario size, detailed outcomes, and limitations.</div>
       </div>
     </div>
   </div>
@@ -2774,20 +2686,20 @@ html.js main section.inview#contact h2{
 <section id="capabilities" data-state="capabilities">
   <div class="macro-line"></div><div class="section-marker">04</div>
   <div class="wrap">
-    <div class="section-head"><div class="section-index">04 · CAPABILITY MAP</div><div><h2>How I use the tools I learn</h2><p>Each capability is connected to the projects or research where I have applied it, so the tools have some useful context.</p></div></div>
+    <div class="section-head"><div class="section-index">04 · CAPABILITY MAP</div><div><h2>How I use the tools I learn</h2><p>Each capability maps to one of the four completed systems, with relevant implementation choices and measured evidence attached.</p></div></div>
     <div class="cap-map">
       <div class="cap-list">
-        <button class="cap-btn active" data-cap="vision"><span class="cap-dot"></span><span><span class="cap-name">Computer vision & RL</span><span class="cap-sub">agents · localization · editing</span></span><span class="cap-count">05</span></button>
-        <button class="cap-btn" data-cap="language"><span class="cap-dot"></span><span><span class="cap-name">LLM systems &amp; tool use</span><span class="cap-sub">fine-tuning · tool calling · safeguards</span></span><span class="cap-count">05</span></button>
-        <button class="cap-btn" data-cap="deep"><span class="cap-dot"></span><span><span class="cap-name">Retrieval &amp; evaluation</span><span class="cap-sub">evidence · abstention · test coverage</span></span><span class="cap-count">05</span></button>
-        <button class="cap-btn" data-cap="software"><span class="cap-dot"></span><span><span class="cap-name">Software systems</span><span class="cap-sub">web · APIs · data · deployment</span></span><span class="cap-count">06</span></button>
+        <button class="cap-btn active" data-cap="agentforge"><span class="cap-dot"></span><span><span class="cap-name">Agent runtime reliability</span><span class="cap-sub">checkpoints · ledgers · recovery</span></span><span class="cap-count">01</span></button>
+        <button class="cap-btn" data-cap="docweave"><span class="cap-dot"></span><span><span class="cap-name">Document intelligence</span><span class="cap-sub">RAG · reconciliation · evidence</span></span><span class="cap-count">02</span></button>
+        <button class="cap-btn" data-cap="memoroute"><span class="cap-dot"></span><span><span class="cap-name">Temporal memory retrieval</span><span class="cap-sub">BM25 · BGE · hybrid RRF</span></span><span class="cap-count">03</span></button>
+        <button class="cap-btn" data-cap="tunebench"><span class="cap-dot"></span><span><span class="cap-name">Tool-calling evaluation</span><span class="cap-sub">Qwen3-4B · schemas · validation</span></span><span class="cap-count">04</span></button>
       </div>
       <div class="cap-detail" id="capDetail">
         <div class="paper-k">applied expertise</div>
-        <h3 id="capTitle">Computer vision & reinforcement learning</h3>
-        <p id="capDesc">A research-oriented pipeline spanning instruction parsing, open-vocabulary detection, pixel-level segmentation, image editing and policy optimization.</p>
-        <div class="map-chain" id="capChain"><span class="map-chip">spaCy</span><span class="map-arrow">→</span><span class="map-chip">GroundingDINO</span><span class="map-arrow">→</span><span class="map-chip">SAM</span><span class="map-arrow">→</span><span class="map-chip">CLIP reward</span><span class="map-arrow">→</span><span class="map-chip">PPO</span></div>
-        <div class="cap-proof" id="capProof">Used in / RL image editing case study / research depth</div>
+        <h3 id="capTitle">Agent runtime reliability</h3>
+        <p id="capDesc">Persistent checkpoints, bounded retries, action identity, and replay safeguards make tool-using workflows recoverable after transient failures.</p>
+        <div class="map-chain" id="capChain"><span class="map-chip">LangGraph</span><span class="map-arrow">→</span><span class="map-chip">Action ledger</span><span class="map-arrow">→</span><span class="map-chip">Bounded retries</span><span class="map-arrow">→</span><span class="map-chip">Recovery</span></div>
+        <div class="cap-proof" id="capProof">AgentForge · 80% fewer duplicate handler executions · 100/100 controlled recoveries</div>
       </div>
     </div>
   </div>
@@ -2831,24 +2743,24 @@ html.js main section.inview#contact h2{
 <section id="notebook" data-state="notebook">
   <div class="macro-line"></div><div class="section-marker">06</div>
   <div class="wrap">
-    <div class="section-head"><div class="section-index">06 · LAB NOTEBOOK</div><div><h2>A few questions I am exploring</h2><p>The notebook pairs the work I have completed with a few clearly labeled questions I would like to explore next.</p></div></div>
+    <div class="section-head"><div class="section-index">06 · LAB NOTEBOOK</div><div><h2>A few questions I am exploring</h2><p>These are open engineering and research questions that follow naturally from the four systems, not claims of completed experiments.</p></div></div>
     <div class="notebook">
       <div class="notebook-main">
         <div class="notebook-list">
-          <button class="active" data-note="n1"><div class="note-date">Open question / RL</div><div class="note-title">How do you reduce reward hacking in image-editing agents?</div><div class="note-kind">question · based on current project direction</div></button>
-          <button data-note="n2"><div class="note-date">Open question / multimodal</div><div class="note-title">How should visual grounding and language instructions interact under ambiguity?</div><div class="note-kind">future direction</div></button>
-          <button data-note="n3"><div class="note-date">Portfolio principle</div><div class="note-title">A metric without context is only a number.</div><div class="note-kind">evidence-led</div></button>
-          <button data-note="n4"><div class="note-date">Career direction</div><div class="note-title">Move from applications toward model-level experimentation.</div><div class="note-kind">trajectory</div></button>
+          <button class="active" data-note="n1"><div class="note-date">Open question / agent reliability</div><div class="note-title">How should an agent distinguish a failed tool call from a completed action with a lost response?</div><div class="note-kind">AgentForge · recovery semantics</div></button>
+          <button data-note="n2"><div class="note-date">Open question / document evidence</div><div class="note-title">How should reconciliation resolve conflicting fields across procurement documents?</div><div class="note-kind">DocWeave · evidence quality</div></button>
+          <button data-note="n3"><div class="note-date">Open question / memory retrieval</div><div class="note-title">How can temporal relations improve memory selection as facts change over time?</div><div class="note-kind">MemoRoute · temporal context</div></button>
+          <button data-note="n4"><div class="note-date">Open question / constrained tools</div><div class="note-title">How can semantic review catch risky tool calls that are structurally valid?</div><div class="note-kind">TuneBench · action safety</div></button>
         </div>
-        <div class="note-foot">Lab notebook / selected reasoning surfaces</div>
+        <div class="note-foot">Lab notebook / next questions from the four systems</div>
       </div>
       <aside class="notebook-side">
         <div class="note-view" id="noteView">
-          <div class="paper-k">question</div>
-          <h3>How do you reduce reward hacking in image-editing agents?</h3>
+          <div class="paper-k">open question / AgentForge</div>
+          <h3>How should an agent distinguish a failed tool call from a completed action with a lost response?</h3>
           <div class="note-rule"></div>
-          <p class="question">Current project evidence points at CLIP-shaped reward + human feedback as part of the design. The deeper research question is how robustly that feedback resists a policy discovering high-scoring but visually wrong edits.</p>
-          <p>An open research direction I would like to explore further.</p>
+          <p class="question">An interrupted request can leave the caller uncertain whether a side effect happened. The design question is how action identity, persistent state, and recovery checks should work together before a retry is issued.</p>
+          <p>This is a follow-on question, not a claim that all ambiguous outcomes have been solved.</p>
         </div>
       </aside>
     </div>
@@ -2863,8 +2775,8 @@ html.js main section.inview#contact h2{
     </div>
     <div class="about-grid">
       <div class="about-copy">
-        <p>I studied Computer Science and Engineering at <strong>VIT-AP</strong>, with project work spanning reinforcement learning, computer vision, LLM fine-tuning, retrieval-augmented generation, and full-stack software engineering.</p>
-        <p>My recent work focuses on making AI systems dependable: a tool-using Qwen3-1.7B agent with safeguards for business operations, and an enterprise knowledge copilot that grounds answers in retrieved evidence and abstains when evidence is insufficient. My reinforcement-learning image editor explores language-conditioned visual actions.</p>
+        <p>I studied Computer Science and Engineering at <strong>VIT-AP</strong>. My current project work is focused on four areas: fault-tolerant agent runtimes, evidence-grounded document reconciliation, temporal memory retrieval, and reproducible GenAI tool-calling evaluation.</p>
+        <p>AgentForge explores replay-safe agent execution and transient-failure recovery. DocWeave reconciles procurement documents with traceable field-level evidence. MemoRoute evaluates temporal-aware hybrid memory retrieval. TuneBench tests constrained Qwen3-4B tool calling and deterministic refund validation on CPU.</p>
         <p>The research side matters just as much. I have published work on pharmaceutical provenance and threatened-habitat prediction, and I keep the site evidence-led: a metric is shown with the thing it measures, and an open question is labelled as an open question.</p>
         <p>I aim to make the work inspectable: through architecture diagrams, evaluation scope, known limitations and published research.</p>
       </div>
@@ -2890,7 +2802,7 @@ html.js main section.inview#contact h2{
     <div class="toolkit-grid">
       <div class="toolkit-group reveal"><div class="toolkit-k">PROGRAMMING</div><div class="toolkit-tags"><span>Python</span><span>Java</span><span>JavaScript</span><span>R</span><span>SQL</span><span>HTML</span><span>CSS</span></div></div>
       <div class="toolkit-group reveal"><div class="toolkit-k">FRAMEWORKS / APP ENGINEERING</div><div class="toolkit-tags"><span>React.js</span><span>Node.js</span><span>Express.js</span><span>FastAPI</span><span>Flask</span><span>TypeScript</span><span>TensorFlow</span><span>Docker</span></div></div>
-      <div class="toolkit-group reveal"><div class="toolkit-k">AI / ML / LLM SYSTEMS</div><div class="toolkit-tags"><span>Qwen3-1.7B</span><span>NF4 QLoRA</span><span>Ollama</span><span>Tool Calling</span><span>RAG</span><span>Hybrid Retrieval</span><span>Evidence Grounding</span><span>Abstention</span><span>CNN</span><span>LSTM</span><span>PPO</span><span>CLIP</span><span>GroundingDINO</span><span>SAM</span><span>spaCy</span><span>Whisper</span><span>Gemini</span><span>NLP</span></div></div>
+      <div class="toolkit-group reveal"><div class="toolkit-k">AI / ML / LLM SYSTEMS</div><div class="toolkit-tags"><span>Qwen3-4B</span><span>llama.cpp</span><span>Tool Calling</span><span>JSON Schema</span><span>RAG</span><span>BM25</span><span>FastEmbed</span><span>BGE</span><span>Hybrid Retrieval</span><span>Reciprocal Rank Fusion</span><span>Semantic Tool-Call Review</span><span>AST / Decimal Validation</span><span>Context Engineering</span><span>Retrieval Evaluation</span></div></div>
       <div class="toolkit-group reveal"><div class="toolkit-k">DATA / ACCESS / DELIVERY</div><div class="toolkit-tags"><span>PostgreSQL</span><span>SQLite</span><span>RBAC</span><span>MongoDB</span><span>REST APIs</span><span>Git</span><span>GitHub Actions</span><span>AWS</span><span>IPFS</span><span>Polygon Layer 2</span></div></div>
     </div>
   </div>
@@ -2951,7 +2863,7 @@ html.js main section.inview#contact h2{
       <button class="phase-btn" data-phase="next">07 · Next question</button>
     </aside>
     <section class="exp-main">
-      <div class="exp-main-head"><div><h3 id="expTitle">RL-Based Human-Centric Image Editing Model</h3><p id="expSub">Question → Method → Experiment → Evidence → Result → Limitation → Next Question</p></div><button class="close-exp" id="closeExp" aria-label="Close case study">×</button></div>
+      <div class="exp-main-head"><div><h3 id="expTitle">AgentForge | Fault-Tolerant AI Agent Runtime</h3><p id="expSub">Question → Method → Experiment → Evidence → Result → Limitation → Next Question</p></div><button class="close-exp" id="closeExp" aria-label="Close case study">×</button></div>
       <div class="exp-canvas-wrap"><canvas id="detailCanvas" aria-label="Interactive project architecture visualization"></canvas></div>
       <div class="exp-copy"><h4 id="phaseLabel">01 · Question</h4><p id="phaseText"></p><div class="next"><strong id="phaseNext"></strong></div></div>
     </section>
@@ -3147,15 +3059,14 @@ html.js main section.inview#contact h2{
   const canvas = $('#systemCanvas'), ctx = canvas.getContext('2d');
   const stage = $('.system-stage');
   const nodes = [
-    {x:.16,y:.47,t:'INPUT',title:'Natural-language instruction',desc:'The visitor’s request becomes the starting state for the editing agent.'},
-    {x:.34,y:.26,t:'PARSE',title:'Instruction parsing',desc:'spaCy turns language into structured edit actions.'},
-    {x:.50,y:.47,t:'GROUND',title:'Open-vocabulary grounding',desc:'GroundingDINO identifies the object referred to by the instruction.'},
-    {x:.66,y:.26,t:'SEGMENT',title:'Pixel segmentation',desc:'SAM isolates the target region for precise edits.'},
-    {x:.84,y:.47,t:'ACT',title:'Image edit action',desc:'The system applies a localized or global edit.'},
-    {x:.50,y:.74,t:'REWARD',title:'Alignment reward',desc:'CLIP-based reward measures alignment with the intended edit.'},
-    {x:.70,y:.74,t:'PPO',title:'Policy update',desc:'PPO updates the agent from the reward signal and human feedback.'}
-  ];
-  let hoveredNode = -1, selectedNode = 0;
+    {x:.16,y:.47,t:'CHECKPOINT',title:'Persistent workflow checkpoint',desc:'LangGraph state is persisted so an interrupted workflow can resume from a known point.'},
+    {x:.34,y:.26,t:'TOOL CALL',title:'Controlled tool execution',desc:'A workflow step invokes a defined handler with validated inputs and an explicit execution identity.'},
+    {x:.50,y:.47,t:'LEDGER',title:'Persistent action ledger',desc:'The ledger records handler state and replay identity to guard against duplicate side effects.'},
+    {x:.66,y:.26,t:'RETRY',title:'Bounded retry policy',desc:'Transient failures are retried within explicit bounds instead of triggering unbounded repeated execution.'},
+    {x:.84,y:.47,t:'RECOVER',title:'Failure recovery',desc:'A workflow restores persisted state and reconciles action outcomes after an interruption.'},
+    {x:.50,y:.74,t:'VERIFY',title:'Automated verification',desc:'Pytest checks workflow behavior, persistence, approval controls, recovery, and API behavior.'},
+    {x:.70,y:.74,t:'RESUME',title:'Safe workflow continuation',desc:'Execution continues from persisted workflow state without rerunning already completed handlers.'}
+  ];  let hoveredNode = -1, selectedNode = 0;
   const edges=[[0,1],[1,2],[2,3],[3,4],[4,6],[6,5],[5,0]];
 
   function sizeCanvas(c, context){
@@ -3239,23 +3150,24 @@ html.js main section.inview#contact h2{
   // ---------------- evidence chart ----------------
   const ec=$('#evidenceChart'), ex=ec.getContext('2d');
   const bars=[
-    {label:'LLM replay', value:96.4, suffix:'%', color:'#7aa2ff'},
-    {label:'Copilot', value:94.4, suffix:'%', color:'#8ee6cf'},
-    {label:'Habitat', value:93.55, suffix:'%', color:'#e9b56f'}
+    {label:'AgentForge', value:121, suffix:'', color:'#7aa2ff'},
+    {label:'DocWeave', value:164, suffix:'', color:'#82e2c8'},
+    {label:'MemoRoute', value:201, suffix:'', color:'#b39aff'},
+    {label:'TuneBench', value:561, suffix:'', color:'#f0b86b'}
   ];
   function drawEvidence(){
     const [w,h]=fitCanvas(ec); ex.clearRect(0,0,w,h);
-    const pad={l:42,r:20,t:20,b:42};
+    const pad={l:42,r:20,t:20,b:42}, scaleMax=600;
     ex.strokeStyle='#1b222d'; ex.lineWidth=1;
     for(let i=0;i<5;i++){const y=pad.t+(h-pad.t-pad.b)*(i/4);ex.beginPath();ex.moveTo(pad.l,y);ex.lineTo(w-pad.r,y);ex.stroke()}
     ex.fillStyle='#687381'; ex.font='9px "DM Mono"'; ex.textAlign='right';
-    for(let i=0;i<5;i++){const v=100-i*25,y=pad.t+(h-pad.t-pad.b)*(i/4);ex.fillText(v+'',pad.l-8,y+3)}
-    const avail=w-pad.l-pad.r, bw=Math.min(110,avail/4), gap=(avail-bw*3)/2;
+    for(let i=0;i<5;i++){const v=scaleMax-i*(scaleMax/4),y=pad.t+(h-pad.t-pad.b)*(i/4);ex.fillText(String(v),pad.l-8,y+3)}
+    const avail=w-pad.l-pad.r, bw=Math.min(100,avail/bars.length), gap=(avail-bw*bars.length)/(bars.length-1);
     bars.forEach((b,i)=>{
-      const x=pad.l+i*(bw+gap), bh=(h-pad.t-pad.b)*b.value/100, y=h-pad.b-bh;
+      const x=pad.l+i*(bw+gap), bh=(h-pad.t-pad.b)*b.value/scaleMax, y=h-pad.b-bh;
       ex.fillStyle=b.color; ex.globalAlpha=.9; ex.fillRect(x,y,bw,bh); ex.globalAlpha=1;
-      ex.fillStyle='#f4f7fb'; ex.textAlign='center'; ex.font='12px "DM Mono"'; ex.fillText(b.value+b.suffix,x+bw/2,y-10);
-      ex.fillStyle='#687381'; ex.font='9px "DM Mono"'; ex.fillText(b.label,x+bw/2,h-18);
+      ex.fillStyle='#f4f7fb'; ex.textAlign='center'; ex.font='11px "DM Mono"'; ex.fillText(String(b.value),x+bw/2,y-10);
+      ex.fillStyle='#687381'; ex.font='8px "DM Mono"'; ex.fillText(b.label,x+bw/2,h-18);
     });
   }
   drawEvidence(); window.addEventListener('resize',drawEvidence);
@@ -3313,29 +3225,29 @@ html.js main section.inview#contact h2{
 
   // ---------------- capability map ----------------
   const caps = {
-    vision:{
-      title:'Computer vision & reinforcement learning',
-      desc:'A research-oriented pipeline spanning instruction parsing, open-vocabulary detection, pixel-level segmentation, image editing and policy optimization.',
-      chips:['spaCy','GroundingDINO','SAM','CLIP reward','PPO'],
-      proof:'Used in / RL image editing / research depth'
+    agentforge:{
+      title:'Agent runtime reliability',
+      desc:'Persistent checkpoints, bounded retries, action identity, and replay safeguards make tool-using workflows recoverable after transient failures.',
+      chips:['LangGraph','Action ledger','Bounded retries','PostgreSQL / SQLite','Pytest'],
+      proof:'AgentForge · 80% fewer duplicate handler executions · 100/100 controlled recoveries · 121 tests passed'
     },
-    language:{
-      title:'LLM systems & tool use',
-      desc:'The application layer around a fine-tuned language model: structured tool calls, six business tools, tenant isolation, prompt-injection defenses and human-approved actions.',
-      chips:['Qwen3-1.7B','FastAPI','NF4 QLoRA','Tool Calling','RBAC'],
-      proof:'Used in / Reliable Tool-Using LLM / 96.4% exact match on a small internal replay'
+    docweave:{
+      title:'Evidence-grounded document intelligence',
+      desc:'A procurement workflow reconciles purchase orders, invoices, and goods receipts, while hybrid retrieval and query expansion surface traceable field-level evidence.',
+      chips:['FastAPI','RAG','BM25 + query expansion','PostgreSQL','SQLAlchemy'],
+      proof:'DocWeave · 11/11 Recall@1 and Recall@3 · MRR 1.00 · 164/164 tests passed'
     },
-    deep:{
-      title:'Retrieval & evaluation',
-      desc:'An enterprise knowledge copilot that uses hybrid retrieval, evidence-grounded answers, role-based access, confidence-based abstention and automated evaluation.',
-      chips:['RAG','Hybrid Retrieval','RBAC','Recall@3','Automated Tests'],
-      proof:'Used in / Adaptive Enterprise Knowledge Copilot / 94.4% on 18 synthetic scenarios'
+    memoroute:{
+      title:'Temporal-aware memory retrieval',
+      desc:'Temporal memory modeling is combined with BM25, dense BGE embeddings, FastEmbed, and Reciprocal Rank Fusion to select context for downstream LLM use.',
+      chips:['SQLite','BM25','FastEmbed','BGE','Hybrid RRF'],
+      proof:'MemoRoute · Recall@1 improved to 75% · 85.42% MRR · 168/168 temporal assessment checks'
     },
-    software:{
-      title:'Software systems',
-      desc:'The layer that makes models usable: full-stack interfaces, FastAPI services, data persistence, container packaging, role-based access and repeatable tests.',
-      chips:['FastAPI','React.js','TypeScript','PostgreSQL','Docker','GitHub Actions'],
-      proof:'Used in / LLM Agent + Enterprise Knowledge Copilot + MERN internship'
+    tunebench:{
+      title:'Constrained tool-calling evaluation',
+      desc:'A CPU-run quantized Qwen3-4B workflow combines JSON Schema constraints, semantic tool-call review, and AST/Decimal refund validation with reproducible evaluation.',
+      chips:['Qwen3-4B','llama.cpp','JSON Schema','AST / Decimal','Streamlit'],
+      proof:'TuneBench · 5× correct tool-call outcomes on a matched 40-case benchmark · 561 tests passed'
     }
   };
   $$('.cap-btn').forEach(btn=>btn.addEventListener('click',()=>{
@@ -3346,10 +3258,10 @@ html.js main section.inview#contact h2{
 
   // ---------------- notebook ----------------
   const notes={
-    n1:['question','How do you reduce reward hacking in image-editing agents?','Current project evidence points at CLIP-shaped reward + human feedback as part of the design. The deeper research question is how robustly that feedback resists a policy discovering high-scoring but visually wrong edits.','This is an open research direction, not a claimed completed experiment.'],
-    n2:['future direction','How should visual grounding and language instructions interact under ambiguity?','The current system already connects language instructions to GroundingDINO and SAM. A deeper direction is studying how ambiguity in language changes localization and downstream editing behavior.','Future direction / no unreported results implied.'],
-    n3:['principle','A metric without context is only a number.','The portfolio therefore pairs documented figures with the project or paper they belong to and keeps the research narrative next to the measurement.','Evidence-first presentation.'],
-    n4:['trajectory','Move from applications toward model-level experimentation.','The current trajectory combines software engineering with applied AI. The future direction is deeper work in training, evaluation, post-training, multimodality and research methods.','Trajectory, not a claim of completion.']
+    n1:['agent reliability','How should an agent distinguish a failed tool call from a completed action with a lost response?','An interrupted request can leave the caller uncertain whether a side effect happened. The design question is how action identity, persistent state, and recovery checks should work together before a retry is issued.','Follow-on question from AgentForge; not a claim that all ambiguous outcomes have been solved.'],
+    n2:['document evidence','How should reconciliation resolve conflicting fields across procurement documents?','Purchase orders, invoices, and goods receipts can disagree in ways that require source-aware reasoning. A useful next step is to measure how retrieval, field-level evidence, and numeric validation behave when evidence conflicts.','Follow-on question from DocWeave; requires a larger and more varied labelled document set.'],
+    n3:['memory retrieval','How can temporal relations improve memory selection as facts change over time?','Retrieval should distinguish what was true at one point from what is true now, while preserving useful relations between records. The next question is how this behaves as histories grow and contradictory updates accumulate.','Follow-on question from MemoRoute; beyond the current synthetic benchmark.'],
+    n4:['tool-call safety','How can semantic review catch risky tool calls that are structurally valid?','A tool call can satisfy a JSON schema and still be unsafe or semantically wrong. TuneBench creates a place to examine how schema constraints, semantic review, and deterministic validation should work together.','Follow-on question from TuneBench; not a claim that the current 40-case benchmark covers all failure modes.']
   };
   $$('.notebook-list button').forEach(b=>b.addEventListener('click',()=>{
     $$('.notebook-list button').forEach(x=>x.classList.remove('active')); b.classList.add('active');
@@ -3358,74 +3270,118 @@ html.js main section.inview#contact h2{
 
   // ---------------- project explorer ----------------
   const projects={
-    rl:{
-      title:'RL-Based Human-Centric Image Editing Model', sub:'Question → Method → Experiment → Evidence → Result → Limitation → Next Question',
-      tags:['PPO','CLIP','GroundingDINO','SAM','spaCy','Python'],
+    agentforge:{
+      title:'AgentForge | Fault-Tolerant AI Agent Runtime',
+      sub:'Question → Method → Experiment → Evidence → Result → Limitation → Next Question',
+      tags:['Python','LangGraph','FastAPI','PostgreSQL','SQLite','Pydantic','Pytest'],
       impl:[
-        'spaCy parses natural-language instructions into structured edit actions.',
-        'GroundingDINO detects target objects from text prompts.',
-        'SAM produces pixel-level segmentation masks.',
-        'CLIP is used as a reward signal aligned to the intended instruction.',
-        'PPO plans and executes multi-step edit sequences.',
-        'Human feedback is included to discourage reward hacking.'
+        'Built a tool-using agent runtime with LangGraph orchestration and FastAPI interfaces.',
+        'Added persistent workflow checkpoints and an action ledger to track handler execution and replay identity.',
+        'Implemented bounded retries and recovery mechanisms for transient failures and ambiguous outcomes.',
+        'Used PostgreSQL and SQLite persistence with Pydantic validation and automated pytest coverage.'
       ],
-      results:['Global + object-specific action space','Pixel-level segmentation with SAM','CLIP-shaped reward + human feedback','Targeted failure mode: reward hacking'
+      results:[
+        '80% reduction in duplicate handler executions: 500 → 100 across 100 simulated actions with five delivery attempts each',
+        '100/100 successful transient-failure recoveries in a controlled 100-iteration experiment',
+        '121 automated tests passed in CI across workflows, tools, persistence, approvals, recovery, and API behavior'
       ],
       phases:{
-        question:['01 · Question','Existing image editors require manual, pixel-precise operations. Can a system execute multi-step natural-language edits across specific objects while preserving the intended image?','Next → define an agent + environment that can connect language to localized actions.'],
-        method:['02 · Method','An agent parses language, identifies target objects, isolates them, applies edits and receives reward signals tied to instruction alignment.','Next → make each stage inspectable as a system pipeline.'],
-        experiment:['03 · Experiment','The implemented concept connects spaCy → GroundingDINO → SAM → editing, with CLIP reward and human feedback informing PPO.','Next → define baselines, ablations and controlled comparisons when experimental evidence is available.'],
-        evidence:['04 · Evidence','The portfolio currently documents architectural choices and failure-mode targets; quantitative experiment tables should be added only when verified results exist.','Next → surface real curves, ablations and failure examples instead of invented telemetry.'],
-        result:['05 · Result','The system demonstrates a concrete research/engineering direction: object-aware, multi-step language-conditioned editing with a reinforcement-learning loop.','Next → test generalization, reward robustness and interaction precision.'],
-        limitation:['06 · Limitation','Reward-based systems can optimize proxies. The current design explicitly acknowledges reward hacking as a failure mode and uses human feedback as part of the mitigation strategy.','Next → quantify how reward design affects failure cases.'],
-        next:['07 · Next question','How can reward design make instruction-following edits robust to visually wrong but high-scoring solutions?','Next → controlled experiments + ablations + error analysis.']
+        question:['01 · Question','How can a tool-using agent recover from transient failures without accidentally repeating an action that already completed?','Next → persist workflow state and give every action a durable execution identity.'],
+        method:['02 · Method','LangGraph orchestrates the workflow. Persistent checkpoints preserve state, an action ledger records execution outcomes, and bounded retries control how the runtime responds to transient failures.','Next → test repeated delivery and interrupted execution under controlled conditions.'],
+        experiment:['03 · Experiment','The duplicate-execution experiment used 100 simulated actions with five delivery attempts each. A separate controlled 100-iteration experiment exercised transient-failure recovery.','Next → compare handler execution counts and verify whether interrupted workflows recover.'],
+        evidence:['04 · Evidence','Duplicate handler executions fell from 500 to 100 (80% reduction). The controlled recovery experiment completed 100/100 successful recoveries. CI reported 121 passing automated tests.','Next → expand failure injection and test more ambiguous tool outcomes.'],
+        result:['05 · Result','AgentForge combines orchestration, durable state, replay safeguards, and bounded retry behavior in a testable runtime for tool-using workflows.','Next → measure recovery behavior across broader failure types and longer workflows.'],
+        limitation:['06 · Limitation','The reported 100-action and 100-iteration results are controlled experiments. They demonstrate the tested scenarios, not production reliability under every network, database, or third-party tool failure.','Next → add broader fault injection, concurrent actions, and real integration workloads.'],
+        next:['07 · Next question','How should the runtime distinguish a failed action from a completed action whose response was lost?','Next → formalize action states and test exactly-once-like behavior under ambiguous outcomes.']
       }
     },
-    agent:{
-      title:'Reliable Tool-Using LLM for Business Operations',sub:'Question → Method → Experiment → Evidence → Result → Limitation → Next Question',
-      tags:['Python','FastAPI','Qwen3-1.7B','NF4 QLoRA','Ollama','PostgreSQL','React.js','TypeScript','Docker','Tool Calling'],
+    docweave:{
+      title:'DocWeave | Evidence-Grounded Document Intelligence & Reconciliation Platform',
+      sub:'Question → Method → Experiment → Evidence → Result → Limitation → Next Question',
+      tags:['Python','FastAPI','RAG','PostgreSQL','SQLAlchemy','BM25','Query Expansion','Alembic'],
       impl:[
-        'Built a full-stack LLM agent that integrates six business tools through structured tool calling.',
-        'Fine-tuned Qwen3-1.7B on 96 synthetic examples using NF4 QLoRA.',
-        'Designed for tenant isolation, prompt-injection defense and human-approved actions.',
-        'Used FastAPI, Ollama, PostgreSQL, React, TypeScript and Docker across the application stack.'
+        'Built 2-way and 3-way procurement reconciliation across purchase orders, invoices, and goods receipts.',
+        'Detected discrepancies with traceable field-level evidence so users can inspect the source behind a reconciliation result.',
+        'Benchmarked three retrieval strategies using BM25 with query expansion, across 13 synthetic queries and 10 evidence chunks.',
+        'Added numeric answer-grounding safeguards, evidence-aware retrieval evaluation, PostgreSQL schemas, idempotency controls, Alembic migrations, and PDF ingestion limits of 25 MB per file / 50 MB combined.'
       ],
-      results:['27/28 exact matches · 96.4% on a small internal controller replay','8/8 predefined real-model workflows passed','Six integrated business tools','Tenant isolation · prompt-injection defense · human-approved actions'],
+      results:[
+        'BM25 with query expansion: 11/11 Recall@1 (100%)',
+        'BM25 with query expansion: 11/11 Recall@3 (100%)',
+        'MRR 1.00 · all 11 scored retrieval results contributed at rank 1',
+        '164/164 automated tests passed (100% pass rate)',
+        'PDF ingestion controls: 25 MB per file / 50 MB combined'
+      ],
       phases:{
-        question:['01 · Question','How can an LLM safely carry out business operations through tools instead of only replying in chat, while keeping sensitive actions under control?','Next → connect the model to narrowly defined business tools and explicit safeguards.'],
-        method:['02 · Method','A full-stack agent uses Qwen3-1.7B for tool-using behaviour, FastAPI for the service layer and six integrated business tools. Tenant isolation, prompt-injection defense and human approval constrain execution.','Next → fine-tune the model and make tool execution testable.'],
-        experiment:['03 · Experiment','Qwen3-1.7B was fine-tuned on 96 synthetic examples with NF4 QLoRA. The system was then assessed through a small internal controller replay and predefined real-model workflows.','Next → evaluate exact controller outputs and complete end-to-end workflows.'],
-        evidence:['04 · Evidence','The small internal controller replay achieved 27/28 exact matches (96.4%). The system also passed 8/8 predefined real-model workflows. These are project-level tests, not a broad independent benchmark.','Next → grow the evaluation set and report failures by tool and task type.'],
-        result:['05 · Result','The project combines LLM fine-tuning, tool/function calling, a full-stack application and safeguards around real actions. The key result is an evaluated workflow, not a chatbot-only interface.','Next → measure reliability across more varied operational requests.'],
-        limitation:['06 · Limitation','The exact-match result comes from a small internal replay using synthetic training examples; the predefined workflow set is small. These figures do not establish general reliability across unseen enterprise workloads.','Next → add held-out tasks, adversarial prompt tests and a documented baseline comparison.'],
-        next:['07 · Next question','How much do fine-tuning, tool schemas and approval gates each contribute to tool-use reliability under ambiguous or adversarial requests?','Next → controlled ablations, expanded test cases and per-tool failure analysis.']
+        question:['01 · Question','How can procurement documents be reconciled across purchase orders, invoices, and goods receipts while keeping each detected discrepancy traceable to its evidence?','Next → model 2-way and 3-way reconciliation and preserve field-level provenance.'],
+        method:['02 · Method','DocWeave combines document ingestion, retrieval-augmented evidence lookup, field-level reconciliation, numeric grounding safeguards, and PostgreSQL-backed schemas for reconciliation and idempotency.','Next → compare retrieval strategies on a fixed synthetic evidence set.'],
+        experiment:['03 · Experiment','Three retrieval strategies were benchmarked across 13 synthetic queries and 10 evidence chunks. BM25 with query expansion was the strongest reported strategy.','Next → inspect rank-sensitive retrieval metrics and application regression coverage.'],
+        evidence:['04 · Evidence','The reported retrieval results are 11/11 Recall@1, 11/11 Recall@3, and MRR 1.00 for the scored result set. The application suite reported 164/164 passing tests.','Next → broaden the evaluation with more document types, longer queries, and conflicting evidence.'],
+        result:['05 · Result','The platform connects procurement reconciliation to source evidence, so discrepancies can be inspected rather than returned as unexplained labels. Retrieval is assessed with explicit rank-sensitive metrics.','Next → extend the labelled corpus and evaluate more complex procurement exceptions.'],
+        limitation:['06 · Limitation','The retrieval benchmark is synthetic and small: 13 queries and 10 evidence chunks are not a representative sample of all procurement document collections. The 11/11 result is the reported scored set, not evidence of universal recall.','Next → evaluate a larger, varied corpus with independently labelled field-level evidence.'],
+        next:['07 · Next question','How can reconciliation handle contradictory, missing, or duplicated values across multiple document versions?','Next → test ambiguity resolution, version tracking, and numeric consistency at field level.']
       }
     },
-    copilot:{
-      title:'Adaptive Enterprise Knowledge & Evidence Copilot',sub:'Question → Method → Experiment → Evidence → Result → Limitation → Next Question',
-      tags:['Python','RAG','Hybrid Retrieval','Evidence Grounding','Abstention','RBAC','SQLite','Retrieval Evaluation','Automated Tests','GitHub Actions'],
+    memoroute:{
+      title:'MemoRoute | Temporal-Aware Memory Retrieval & Context Engineering Engine',
+      sub:'Question → Method → Experiment → Evidence → Result → Limitation → Next Question',
+      tags:['Python','SQLite','BM25','FastEmbed','BGE','Hybrid Retrieval','Reciprocal Rank Fusion','Temporal Modeling'],
       impl:[
-        'Built a secure enterprise-support copilot for policy retrieval and evidence-grounded responses.',
-        'Combined hybrid retrieval with confidence-based abstention when evidence is insufficient.',
-        'Applied role-based access control (RBAC) and SQLite for the local data layer.',
-        'Added retrieval evaluation, automated tests and a GitHub Actions workflow.'
+        'Implemented temporal memory modeling, relation-aware evidence handling, and persistent SQLite storage.',
+        'Compared BM25 sparse retrieval with dense BGE retrieval and hybrid Reciprocal Rank Fusion (RRF).',
+        'Added adaptive context selection to rank and select retrieved evidence for downstream LLM use.',
+        'Validated temporal reasoning across scenarios, memory records, and relation types, with repeatable tests.'
       ],
-      results:['94.4% pass rate across 18 synthetic scenarios','All 5 expected safety-handling cases passed','100% Recall@3 across 6 retrieval queries','27/27 tests passed','29.6 ms average local deterministic handling latency, excluding model and network calls'],
+      results:[
+        'Recall@1 improved from 56.25% to 75% on an 8-query, 16-memory synthetic benchmark',
+        'Recall@3: 93.75%',
+        'BGE + hybrid RRF MRR: 85.42% vs 79.17% for BM25',
+        '168/168 temporal assessment checks completed across 20 scenarios, 32 memory records, and 7 relation types',
+        '100% top-3 ranking consistency across six RRF configurations on all 8 benchmark queries',
+        '201 automated tests passed'
+      ],
       phases:{
-        question:['01 · Question','How can an enterprise support assistant answer policy questions from relevant evidence without confidently inventing answers or exposing content to the wrong role?','Next → make retrieval, permissions and abstention part of the system design.'],
-        method:['02 · Method','A Python RAG system uses hybrid retrieval to locate relevant evidence, supports evidence-grounded answers, enforces role-based access control and abstains when confidence/evidence is insufficient. SQLite stores the local data and automated checks validate behaviour.','Next → evaluate both answer quality and retrieval quality.'],
-        experiment:['03 · Experiment','The project was checked against 18 synthetic scenarios, including five expected safety-handling cases, six retrieval queries and an automated test suite. Local deterministic handling time was measured separately from model and network calls.','Next → record each result with its evaluation scope.'],
-        evidence:['04 · Evidence','The reported results are a 94.4% pass rate across 18 synthetic scenarios, all five expected safety cases passed, 100% Recall@3 across six queries and 27/27 tests passed. Average local deterministic handling latency was 29.6 ms, excluding model and network calls.','Next → expand beyond synthetic scenarios and add more diverse documents and queries.'],
-        result:['05 · Result','The copilot couples answer generation with retrieval quality, access rules and explicit handling when evidence is insufficient. The tests cover safety behaviour as well as retrieval and functional correctness.','Next → evaluate groundedness and abstention quality with a larger labelled dataset.'],
-        limitation:['06 · Limitation','The evidence comes from a small synthetic evaluation set and six retrieval queries. The 29.6 ms figure measures local deterministic handling only; it excludes model inference and network calls and is not end-to-end response latency.','Next → test larger real-world policy collections, more roles and harder ambiguous questions.'],
-        next:['07 · Next question','How should retrieval coverage, answer groundedness and abstention quality be jointly evaluated as a knowledge base grows and policies conflict?','Next → build a larger labelled evaluation set with retrieval and answer-level metrics.']
+        question:['01 · Question','How should an LLM select useful context from a memory store when facts change over time and records have relationships?','Next → combine temporal structure with sparse, dense, and hybrid retrieval.'],
+        method:['02 · Method','MemoRoute uses SQLite-backed temporal memory modeling, BM25, FastEmbed/BGE dense retrieval, and Reciprocal Rank Fusion to rank candidate memories and select context.','Next → evaluate ranking quality and temporal reasoning separately.'],
+        experiment:['03 · Experiment','The retrieval benchmark used eight queries and 16 synthetic memory records. Temporal assessment covered 20 scenarios, 32 records, and seven relation types. Six RRF configurations were checked for ranking consistency.','Next → compare Recall@1, Recall@3, MRR, and assessment completion.'],
+        evidence:['04 · Evidence','BGE improved Recall@1 from 56.25% to 75% and achieved 93.75% Recall@3. BGE with hybrid RRF reached 85.42% MRR versus 79.17% for BM25. Temporal checks completed 168/168, and top-3 rankings stayed 100% consistent across six tested RRF configurations.','Next → enlarge the dataset and test more temporal contradictions and update patterns.'],
+        result:['05 · Result','MemoRoute brings temporal structure and hybrid retrieval into context engineering, with measurable retrieval comparisons and explicit temporal assessment checks. It passed 201 automated tests.','Next → assess retrieval quality on longer and less synthetic memory histories.'],
+        limitation:['06 · Limitation','The retrieval benchmark is small and synthetic, with eight queries and 16 memory records. Ranking consistency across six configurations is specific to those eight queries and does not establish general stability on larger corpora.','Next → evaluate a broader memory set with more update, contradiction, and relation patterns.'],
+        next:['07 · Next question','How should retrieval balance recency, relation strength, and semantic similarity when older facts remain relevant but newer facts conflict?','Next → run controlled ablations over temporal weighting and relation-aware ranking.']
+      }
+    },
+    tunebench:{
+      title:'TuneBench | GenAI Tool-Calling, Reliability & Evaluation Platform',
+      sub:'Question → Method → Experiment → Evidence → Result → Limitation → Next Question',
+      tags:['Python','Qwen3-4B','llama.cpp','JSON Schema','Streamlit','pytest','GitHub Actions','AST','Decimal'],
+      impl:[
+        'Engineered a quantized Qwen3-4B workflow running entirely on CPU with llama.cpp.',
+        'Used JSON Schema constraints for structured generation and semantic review for generated tool calls.',
+        'Added AST/Decimal refund validation to check action values deterministically.',
+        'Pinned model revisions, hashed datasets, preserved execution traces, and fixed a review-induced action-escalation defect.',
+        'Delivered a public Streamlit demo with simulated workflows, recorded AI responses, and evaluation dashboards.'
+      ],
+      results:[
+        '5× increase in correct tool-call outcomes on a matched 40-case synthetic benchmark',
+        '561 automated software tests passed',
+        'CPU-only quantized Qwen3-4B workflow',
+        'Reproducible runs with pinned model revisions, hashed datasets, and saved traces',
+        'Public Streamlit demo with simulated workflows and evaluation dashboards'
+      ],
+      phases:{
+        question:['01 · Question','How can tool-calling behavior from a locally run LLM be constrained, reviewed, and evaluated so structurally valid calls do not automatically become unsafe actions?','Next → combine schema constraints with semantic review and deterministic validation.'],
+        method:['02 · Method','TuneBench runs quantized Qwen3-4B on CPU through llama.cpp. JSON Schema constrains output structure, semantic review checks tool-call meaning, and AST/Decimal logic validates refund calculations.','Next → compare correct tool-call outcomes on a matched benchmark and preserve full traces.'],
+        experiment:['03 · Experiment','A matched 40-case synthetic benchmark compared correct tool-call outcomes. Reproducibility controls included pinned model revisions, hashed datasets, and preserved execution traces.','Next → inspect outcome changes, review failures, and regression coverage.'],
+        evidence:['04 · Evidence','Correct tool-call outcomes increased 5× on the matched 40-case synthetic benchmark. The application reported 561 passing automated software tests. A review-induced action-escalation defect was identified and fixed.','Next → increase benchmark diversity and continue testing adversarial or ambiguous tool requests.'],
+        result:['05 · Result','TuneBench provides a CPU-first, reproducible environment for testing schema-constrained LLM tool calls, semantic review, and deterministic refund validation, with a public Streamlit demo.','Next → extend evaluation across more tools, task types, and model revisions.'],
+        limitation:['06 · Limitation','The 5× result is tied to a matched 40-case synthetic benchmark. It does not by itself establish performance on live customer workflows or unseen tool ecosystems.','Next → evaluate larger held-out cases and report per-tool error categories.'],
+        next:['07 · Next question','How much additional safety does semantic review provide after a model has already produced a schema-valid tool call?','Next → run controlled ablations for schema-only, review-only, and combined validation.']
       }
     }
   };
-
   const explorer=$('#explorer'), expTitle=$('#expTitle'), expTags=$('#expTags'), expImpl=$('#expImpl'), expResults=$('#expResults'), phaseLabel=$('#phaseLabel'), phaseText=$('#phaseText'), phaseNext=$('#phaseNext');
   const dcanvas=$('#detailCanvas'), dctx=dcanvas.getContext('2d');
-  let currentProject=null, currentProjectKey='rl', currentPhase='question';
+  let currentProject=null, currentProjectKey='agentforge', currentPhase='question';
 
   function renderExplorer(projectKey, phase='question'){
     currentProjectKey=projectKey; currentProject=projects[projectKey]; currentPhase=phase;
@@ -3537,30 +3493,27 @@ html.js main section.inview#contact h2{
 
   // Project tags act as contextual signals and can be clicked for a quick explanation.
   const tagNotes = {
-    'PPO':'Policy optimization used to learn a sequence of image-editing actions.',
-    'CLIP':'A language-image model used as part of the image editor reward signal.',
-    'GroundingDINO':'Locates objects referenced by an instruction.',
-    'SAM':'Produces pixel-level segmentation masks.',
-    'spaCy':'Parses written instructions into structured actions.',
-    'FastAPI':'Python framework used to expose application endpoints.',
-    'Qwen3-1.7B':'The language model fine-tuned for controlled business tool use.',
-    'NF4 QLoRA':'Parameter-efficient fine-tuning using quantization-aware low-rank adapters.',
-    'PostgreSQL':'Relational database used in the business-operations stack.',
-    'Tool Calling':'A structured interaction in which the model requests a defined tool operation.',
-    'Ollama':'Local model serving used by the LLM project.',
-    'Docker':'Container tooling used in the application stack.',
-    'React.js':'UI framework used for the full-stack LLM application.',
-    'TypeScript':'Adds static types to the client-side application code.',
-    'RAG':'Retrieval-augmented generation: retrieve evidence before answering.',
-    'Hybrid Retrieval':'Combines retrieval methods to find relevant supporting content.',
-    'Evidence Grounding':'Keeps answers tied to retrieved supporting evidence.',
-    'Abstention':'Withholds an answer when evidence is insufficient.',
-    'RBAC':'Role-based access control for limiting access by role.',
-    'SQLite':'Lightweight relational database used in the copilot.',
-    'GitHub Actions':'Automates checks and test workflows.',
-    'TensorFlow':'Deep-learning framework used in earlier coursework/projects.',
-    'CNN':'Captures local patterns in sequence data.',
-    'LSTM':'Models sequence context in text data.'
+    'Python':'Primary implementation language across the four current systems.',
+    'LangGraph':'Workflow orchestration used by AgentForge.',
+    'FastAPI':'Python API framework used in AgentForge and DocWeave.',
+    'PostgreSQL':'Relational persistence used for application and reconciliation data.',
+    'SQLite':'Persistent local memory and application state.',
+    'Pydantic':'Typed data validation and application models.',
+    'Pytest':'Automated testing framework used across the projects.',
+    'RAG':'Retrieval-augmented generation: retrieve supporting evidence before generating.',
+    'SQLAlchemy':'Python SQL toolkit and ORM used in DocWeave.',
+    'BM25':'Sparse ranking method used for information retrieval.',
+    'FastEmbed':'Embedding interface used by MemoRoute.',
+    'BGE':'Dense embedding model used in MemoRoute retrieval experiments.',
+    'Hybrid Retrieval':'Combines sparse and dense retrieval methods.',
+    'RRF':'Reciprocal Rank Fusion combines multiple ranked candidate lists.',
+    'Qwen3-4B':'The language model used in TuneBench.',
+    'llama.cpp':'Local inference runtime used for CPU-based quantized model execution.',
+    'JSON Schema':'Constrains structured model output to a defined schema.',
+    'Streamlit':'Framework used for the public TuneBench demo.',
+    'GitHub Actions':'Automates checks and continuous-integration workflows.',
+    'AST':'Abstract syntax tree parsing used in deterministic refund validation.',
+    'Decimal':'Decimal arithmetic helps avoid floating-point errors in refund calculations.'
   };
   $$('.project-card .tag').forEach(t=>{
     const text=t.textContent.trim();
@@ -3598,11 +3551,38 @@ html.js main section.inview#contact h2{
 
   // Toolkit chips show where the technology sits in the portfolio.
   const toolkitUsage={
-    Python:'RL image editor · tool-using LLM · evidence copilot · research work',Java:'academic coursework · software engineering',JavaScript:'full-stack interfaces and interaction work',
-    'React.js':'tool-using LLM interface · MERN full-stack internship','Node.js':'MERN full-stack internship','Express.js':'MERN full-stack internship',Flask:'previous application work',TensorFlow:'deep-learning coursework/projects',
-    CNN:'deep-learning coursework/projects',LSTM:'sequence-model coursework/projects',PPO:'RL image editing model',CLIP:'RL image editing model',GroundingDINO:'RL image editing model',SAM:'RL image editing model',spaCy:'RL image editing model',Whisper:'speech/NLP experience',Gemini:'generative-AI experience',NLP:'language-processing experience',
-    FastAPI:'tool-using LLM service layer',Qwen3:'tool-using LLM', 'Qwen3-1.7B':'tool-using LLM', 'NF4 QLoRA':'LLM fine-tuning',Ollama:'local model serving',PostgreSQL:'business-operations data layer','Tool Calling':'agent execution layer',Docker:'application packaging','TypeScript':'LLM application interface',RAG:'enterprise knowledge copilot','Hybrid Retrieval':'enterprise knowledge copilot','Evidence Grounding':'enterprise knowledge copilot',Abstention:'enterprise knowledge copilot',RBAC:'access control in the copilot and agent',SQLite:'copilot local data layer','GitHub Actions':'automated test workflow',
-    AWS:'cloud / deployment tooling',MongoDB:'MERN full-stack internship', 'REST APIs':'FastAPI agent · full-stack systems',Git:'project workflow',IPFS:'TrustAnchor research','Polygon Layer 2':'TrustAnchor research'
+    Python:'implementation language across AgentForge, DocWeave, MemoRoute, and TuneBench',
+    Java:'academic coursework and software engineering',
+    JavaScript:'full-stack interfaces and interaction work',
+    TypeScript:'typed client-side application development',
+    'React.js':'MERN full-stack internship',
+    'Node.js':'MERN full-stack internship',
+    'Express.js':'MERN full-stack internship',
+    FastAPI:'API layer in AgentForge and DocWeave',
+    LangGraph:'workflow orchestration in AgentForge',
+    Pydantic:'data validation in AgentForge',
+    PostgreSQL:'persistent application and reconciliation data',
+    SQLite:'persistent local memory and application state',
+    SQLAlchemy:'relational data access in DocWeave',
+    Pytest:'automated test suites across the four projects',
+    'Qwen3-4B':'local quantized model evaluated by TuneBench',
+    'llama.cpp':'CPU model inference runtime in TuneBench',
+    'JSON Schema':'constrained structured output for tool calls',
+    Streamlit:'public TuneBench demonstration interface',
+    RAG:'document retrieval and evidence grounding in DocWeave',
+    BM25:'sparse ranking in DocWeave and MemoRoute',
+    FastEmbed:'embedding generation in MemoRoute',
+    BGE:'dense retrieval model in MemoRoute',
+    'Hybrid Retrieval':'combines sparse and dense results in MemoRoute',
+    'Reciprocal Rank Fusion':'combines ranked candidate lists in MemoRoute',
+    'GitHub Actions':'continuous integration and automated checks',
+    Docker:'application packaging and reproducible environments',
+    Alembic:'database schema migration support in DocWeave',
+    'REST APIs':'application interfaces and service integration',
+    AWS:'cloud platform fundamentals and certification',
+    MongoDB:'MERN full-stack internship',
+    IPFS:'TrustAnchor research publication',
+    'Polygon Layer 2':'TrustAnchor research publication'
   };
   $$('.toolkit-tags span').forEach(tag=>{
     const key=tag.textContent.trim();
