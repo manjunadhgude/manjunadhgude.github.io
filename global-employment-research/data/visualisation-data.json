@@ -1,0 +1,282 @@
+{
+  "title": "Global Employment Research — Quantitative Visualisations",
+  "generated": "2026-11-13",
+  "scope": "Curated numeric evidence extracted from the complete Notion research export. Every chart includes its source, period, unit and limitation.",
+  "metrics": [
+    {
+      "label": "India IT & BPM revenue",
+      "value": "US$315B",
+      "detail": "FY2026 estimate",
+      "source": "https://www.ibef.org/industry/information-technology-india"
+    },
+    {
+      "label": "GCCs in India",
+      "value": "2,117",
+      "detail": "FY2026 landscape report",
+      "source": "https://zinnov.com/centers-of-excellence/zinnov-nasscom-india-gcc-landscape-2026-report/"
+    },
+    {
+      "label": "GCC professionals",
+      "value": "2.36M",
+      "detail": "FY2026 landscape report",
+      "source": "https://zinnov.com/centers-of-excellence/zinnov-nasscom-india-gcc-landscape-2026-report/"
+    },
+    {
+      "label": "Indian tech startup funding",
+      "value": "US$9.1B",
+      "detail": "2025 funding; +23% YoY",
+      "source": "https://d3r3sr3o54kk15.cloudfront.net/s3fs-public/media_pdf/Nasscom%20%E2%80%93%20Zinnov%20Tech%20Start-up%20Report%202026_India%E2%80%99s%20Tech%20Start-ups%20at%20a%20Strategic%20Inflection%20Point%20as%20Funding%20Rises%20to%20%249.1%20Bn.pdf"
+    }
+  ],
+  "charts": [
+    {
+      "id": "sector-gva",
+      "title": "India: sector share of GVA",
+      "subtitle": "2024–25 · share of gross value added",
+      "type": "doughnut",
+      "labels": [
+        "Services",
+        "Primary",
+        "Secondary"
+      ],
+      "values": [
+        55,
+        16,
+        29
+      ],
+      "unit": "%",
+      "source": "NITI Aayog, India’s Services Sector: Insights from GVA Trends and State-Level Dynamics",
+      "url": "https://www.niti.gov.in/node/2029",
+      "note": "These are output/GVA shares, not employment shares. Rounded figures; do not use them as a jobs distribution."
+    },
+    {
+      "id": "services-employment",
+      "title": "Services share of employment rose",
+      "subtitle": "India · 1992 to 2022",
+      "type": "bar",
+      "labels": [
+        "1992",
+        "2022"
+      ],
+      "values": [
+        22.1,
+        30
+      ],
+      "unit": "% of employment",
+      "source": "Government of India, Economic Survey 2025–26",
+      "url": "https://www.indiabudget.gov.in/economicsurvey/doc/echapter.pdf",
+      "note": "An 7.9 percentage-point increase between the two reported years. This is not a year-by-year time series."
+    },
+    {
+      "id": "entry-level-share",
+      "title": "Entry-level share in one job-listing sample",
+      "subtitle": "PrepNPlaced indexed Indian tech listings · May–July vs October 2026",
+      "type": "bar",
+      "labels": [
+        "May–July 2026",
+        "October 2026"
+      ],
+      "values": [
+        5.9,
+        4.3
+      ],
+      "unit": "% of indexed listings",
+      "source": "PrepNPlaced, India Tech Hiring Report 2026",
+      "url": "https://www.prepnplaced.com/india-tech-hiring-report-2026",
+      "note": "The sample reported 908/15,429 entry/junior listings earlier and 799/18,752 in October. This is one publisher’s indexed sample, not a census of Indian vacancies; source coverage/classification may change."
+    },
+    {
+      "id": "fresher-hiring",
+      "title": "IT-BPM fresher hiring outlook",
+      "subtitle": "India · FY2026 estimate vs FY2027 forecast",
+      "type": "bar",
+      "labels": [
+        "FY2026 estimate",
+        "FY2027 forecast"
+      ],
+      "values": [
+        1.75,
+        2.1
+      ],
+      "unit": "lakh hires",
+      "source": "Economic Times, 14 October 2026, citing HAN Digital outlook",
+      "url": "https://economictimes.indiatimes.com/jobs/fresher/ai-skills-redraw-entry-level-jobs-map-as-it-bpm-fresher-hiring-rebounds/articleshow/134934219.cms",
+      "note": "FY2027 is a forecast, not realised hiring. This covers IT-BPM fresher hiring broadly, not AI-only jobs."
+    },
+    {
+      "id": "india-exports",
+      "title": "India’s share of global exports increased",
+      "subtitle": "2005 vs 2024 · merchandise and commercial services",
+      "type": "groupedBar",
+      "labels": [
+        "Merchandise exports",
+        "Commercial services exports"
+      ],
+      "series": [
+        {
+          "label": "2005",
+          "values": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "2024",
+          "values": [
+            1.8,
+            4.3
+          ]
+        }
+      ],
+      "unit": "% of global exports",
+      "source": "Government of India, Economic Survey 2025–26, Chapter 4 and Chapter 8",
+      "url": "https://www.indiabudget.gov.in/economicsurvey/doc/echapter.pdf",
+      "note": "The two categories are distinct. Values represent India’s share of world exports, not growth rates."
+    },
+    {
+      "id": "gvc-participation",
+      "title": "Backward global value-chain participation",
+      "subtitle": "Foreign value added as a share of gross exports",
+      "type": "line",
+      "labels": [
+        "1995",
+        "2012",
+        "2020"
+      ],
+      "series": [
+        {
+          "label": "India",
+          "values": [
+            10.7,
+            25.5,
+            17.2
+          ]
+        },
+        {
+          "label": "Vietnam (2020 only)",
+          "values": [
+            null,
+            null,
+            48
+          ]
+        }
+      ],
+      "unit": "%",
+      "source": "Government of India, Economic Survey 2025–26",
+      "url": "https://www.indiabudget.gov.in/economicsurvey/doc/echapter.pdf",
+      "note": "India’s ratio rose then moderated. Vietnam is shown only for 2020; missing years are intentionally not interpolated. This is one measure of GVC integration, not a complete competitiveness score."
+    },
+    {
+      "id": "trade-association",
+      "title": "Reported association: exports and outcomes",
+      "subtitle": "World Bank cross-country sample, 1995–2019 · associated change for a 10% export increase",
+      "type": "bar",
+      "labels": [
+        "Employment level",
+        "Labour earnings",
+        "Productivity"
+      ],
+      "values": [
+        3.1,
+        3.9,
+        0.95
+      ],
+      "unit": "% associated change",
+      "source": "World Bank, Leveraging Trade for More and Better Jobs",
+      "url": "https://www.worldbank.org/en/topic/trade/publication/leveraging-trade-for-more-and-better-jobs",
+      "note": "These are reported cross-country associations, not guaranteed causal effects and not an India-specific forecast. Do not interpret as a causal elasticity."
+    },
+    {
+      "id": "global-trade",
+      "title": "Global trade in goods and services",
+      "subtitle": "2025 · WTO World Trade Statistics",
+      "type": "bar",
+      "labels": [
+        "Goods trade growth",
+        "Services trade growth"
+      ],
+      "values": [
+        6,
+        8
+      ],
+      "unit": "% year-on-year growth",
+      "source": "WTO, World Trade Statistics 2025",
+      "url": "https://www.wto.org/english/res_e/statis_e/world_trade_statistics_e.htm",
+      "note": "The research also reports total world goods and commercial services trade of US$34.65 trillion, with services representing 27.6%. Growth rates are not absolute trade values."
+    }
+  ],
+  "special": [
+    {
+      "title": "India IT & BPM exports",
+      "value": "US$246.4B",
+      "period": "FY2026 estimate",
+      "source": "IBEF, September 2026",
+      "url": "https://www.ibef.org/industry/information-technology-india",
+      "note": "Industry estimate; definitions and reporting dates may differ from other industry totals."
+    },
+    {
+      "title": "GCC revenue in India",
+      "value": "US$98.4B",
+      "period": "FY2026",
+      "source": "Zinnov–Nasscom GCC Landscape 2026",
+      "url": "https://zinnov.com/centers-of-excellence/zinnov-nasscom-india-gcc-landscape-2026-report/",
+      "note": "Ecosystem revenue, not current job openings."
+    },
+    {
+      "title": "GCC count in India",
+      "value": "2,117",
+      "period": "FY2026",
+      "source": "Zinnov–Nasscom GCC Landscape 2026",
+      "url": "https://zinnov.com/centers-of-excellence/zinnov-nasscom-india-gcc-landscape-2026-report/",
+      "note": "Centre count, not a count of distinct employers hiring today."
+    },
+    {
+      "title": "GCC professionals",
+      "value": "2.36M",
+      "period": "FY2026",
+      "source": "Zinnov–Nasscom GCC Landscape 2026",
+      "url": "https://zinnov.com/centers-of-excellence/zinnov-nasscom-india-gcc-landscape-2026-report/",
+      "note": "Reported workforce estimate."
+    },
+    {
+      "title": "India tech startup funding",
+      "value": "US$9.1B",
+      "period": "2025 · +23% year-on-year",
+      "source": "Nasscom–Zinnov India Tech Start-up Report 2026",
+      "url": "https://d3r3sr3o54kk15.cloudfront.net/s3fs-public/media_pdf/Nasscom%20%E2%80%93%20Zinnov%20Tech%20Start-up%20Report%202026_India%E2%80%99s%20Tech%20Start-ups%20at%20a%20Strategic%20Inflection%20Point%20as%20Funding%20Rises%20to%20%249.1%20Bn.pdf",
+      "note": "Funding is not revenue, profit, or a guarantee of hiring."
+    },
+    {
+      "title": "Management experiment in India",
+      "value": "+11%",
+      "period": "Average productivity increase in treatment plants",
+      "source": "Bloom et al., Does Management Matter? Evidence from India, World Bank Policy Research Working Paper 5573",
+      "url": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/253231468261314245/does-management-matter-evidence-from-india",
+      "note": "Experiment covered 28 plants across 17 firms. This should not be generalised as an 11% gain for every Indian business."
+    },
+    {
+      "title": "IT-BPM industry revenue",
+      "value": "US$315B",
+      "period": "FY2026 estimate",
+      "source": "IBEF, IT & BPM Industry in India",
+      "url": "https://www.ibef.org/industry/information-technology-india",
+      "note": "Industry estimate; do not add overlapping industry categories."
+    },
+    {
+      "title": "World goods + services trade",
+      "value": "US$34.65T",
+      "period": "2025",
+      "source": "WTO, World Trade Statistics 2025",
+      "url": "https://www.wto.org/english/res_e/statis_e/world_trade_statistics_e.htm",
+      "note": "Global aggregate, not India's trade value."
+    }
+  ],
+  "integrity": [
+    "No synthetic salary distributions or invented employer pay comparisons are plotted.",
+    "GVA share is not employment share.",
+    "Forecasts are labelled as forecasts; they are not actual outcomes.",
+    "Cross-country associations are not described as causal effects.",
+    "The 99-row personal job-tracker snapshot is separate from national labour-market evidence and is not used as a representative India-wide dataset.",
+    "All charts are drawn from numeric claims already recorded in the Notion research export; see the source links and caveats beneath each chart."
+  ]
+}
