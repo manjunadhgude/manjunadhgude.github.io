@@ -1,0 +1,302 @@
+{
+  "meta": {
+    "title": "Economic Systems & Institutions",
+    "stage": "Stage 1 · Part 6",
+    "researchDate": "13 November 2026",
+    "status": "Researched and visualised",
+    "sourceOfTruth": "Notion research book",
+    "notionUrl": "https://app.notion.com/p/41641ff4c274815ea192d40fb62a858c"
+  },
+  "question": "Who decides what an economy produces, how production is organised, who receives the output, and what rules govern those decisions—and how do those rules affect firms, investment, jobs and wages?",
+  "systems": [
+    {
+      "id": "market",
+      "name": "Market-oriented",
+      "mechanism": "Prices · exchange · competition",
+      "ownership": "Private ownership is prominent; households and firms make many decentralised choices.",
+      "strengths": [
+        "Prices coordinate dispersed information",
+        "Competition can reward innovation and efficiency",
+        "Entry allows new firms and ideas"
+      ],
+      "risks": [
+        "Inequality and unequal bargaining power",
+        "Market power and barriers to entry",
+        "Externalities and underprovided public goods"
+      ]
+    },
+    {
+      "id": "command",
+      "name": "Command / centrally planned",
+      "mechanism": "Administrative plans and direction",
+      "ownership": "Public authorities direct major output, input, investment and price decisions; state ownership may be extensive.",
+      "strengths": [
+        "Can mobilise resources toward selected priorities",
+        "Can coordinate large projects by central direction"
+      ],
+      "risks": [
+        "Information bottlenecks and weak feedback",
+        "Shortages or misallocation",
+        "Weak incentives when targets and accountability are poor"
+      ]
+    },
+    {
+      "id": "mixed",
+      "name": "Mixed",
+      "mechanism": "Markets + public coordination",
+      "ownership": "Private and public actors both make important decisions; government also taxes, regulates, provides and redistributes.",
+      "strengths": [
+        "Can combine enterprise and price signals with public goods",
+        "Can address some market failures and protect people",
+        "Can support stability and wider access"
+      ],
+      "risks": [
+        "Poor design can add compliance costs",
+        "Capture, corruption or weak capacity",
+        "Outcomes depend on accountability and enforcement"
+      ]
+    }
+  ],
+  "keyCorrection": "Market does not mean no government. Government involvement does not automatically mean command economy. Property, contracts, corporate law, liability, competition rules, taxation and dispute resolution define the rules within which markets operate.",
+  "institutions": {
+    "definition": "Durable formal or informal rules, norms, procedures and enforcement arrangements that structure repeated interaction.",
+    "examples": [
+      "Property and contract law",
+      "Court procedures and insolvency rules",
+      "Accounting standards and labour rules",
+      "Competition law and monetary arrangements",
+      "Trust, conventions and professional norms"
+    ],
+    "functions": [
+      [
+        "Define and protect rights",
+        "Clarify who owns, uses, transfers or earns returns from an asset."
+      ],
+      [
+        "Make promises credible",
+        "Contracts and dispute resolution make exchange possible beyond personal trust."
+      ],
+      [
+        "Reduce transaction costs",
+        "Predictable rules reduce searching, negotiating, monitoring and enforcement costs."
+      ],
+      [
+        "Coordinate expectations",
+        "Shared standards and procedures help firms, workers, lenders and customers plan."
+      ],
+      [
+        "Limit opportunism",
+        "Fraud rules, audits, liability and sanctions deter cheating and unsafe conduct."
+      ],
+      [
+        "Enable competition and entry",
+        "Fair access and competition policy can limit exclusionary conduct."
+      ],
+      [
+        "Address market failures",
+        "Policy can respond to externalities, public goods, information gaps and market power."
+      ],
+      [
+        "Redistribute and protect",
+        "Taxes, transfers, education, healthcare and social insurance shape opportunity and risk."
+      ],
+      [
+        "Support macro stability",
+        "Monetary and fiscal frameworks affect inflation, credit, demand and employment."
+      ]
+    ]
+  },
+  "distinction": {
+    "institution": "The rules of the game: e.g. company law, contract enforcement, limited liability and insolvency procedures.",
+    "organisation": "The players: e.g. a company, court, ministry, trade union, bank, regulator or university.",
+    "example": "A company is an organisation. The law governing its incorporation and contracts is part of the institutional framework. A regulator is an organisation; the statute defining its powers and accountability is an institution."
+  },
+  "failures": [
+    {
+      "name": "Public goods",
+      "definition": "Generally non-rival and non-excludable: one person's use does not substantially reduce another's, and excluding non-payers is difficult.",
+      "example": "National defence and some forms of public knowledge.",
+      "why": "People may free-ride, so private markets can provide less than the socially desired amount."
+    },
+    {
+      "name": "Externalities",
+      "definition": "A cost or benefit imposed on third parties that is not fully reflected in the transaction price.",
+      "example": "Pollution is a negative externality; knowledge spillovers and vaccination can create positive externalities.",
+      "why": "Private decisions may not include the full social cost or benefit."
+    },
+    {
+      "name": "Other market failures",
+      "definition": "Information asymmetry, natural monopoly and market power can also distort outcomes.",
+      "example": "A dominant network provider may face weak competitive pressure.",
+      "why": "The market outcome may not be efficient under the relevant welfare criteria."
+    }
+  ],
+  "policy": {
+    "responses": [
+      "Public provision",
+      "Taxes or subsidies",
+      "Standards and regulation",
+      "Disclosure and information rules",
+      "Competition enforcement"
+    ],
+    "caveat": "Intervention can improve outcomes, but it has costs and can fail. Education, healthcare and transport are not necessarily pure public goods; access can be restricted and capacity can be congested."
+  },
+  "governmentFailure": [
+    "Incomplete information or administrative capacity",
+    "Weak accountability or misaligned incentives",
+    "Regulatory capture by powerful regulated interests",
+    "Corruption, patronage, exclusion or selective enforcement",
+    "Contradictory procedures that raise entry costs",
+    "Policy uncertainty that discourages long-term investment",
+    "Short-term political incentives"
+  ],
+  "governance": {
+    "intro": "World Bank WDR 2017 identifies three functions that help policies work in real political and social settings.",
+    "items": [
+      [
+        "Commitment",
+        "Rules and promises remain credible over time."
+      ],
+      [
+        "Coordination",
+        "People and organisations can align expectations and investment."
+      ],
+      [
+        "Cooperation",
+        "Actors contribute to shared goals rather than free-ride or block them."
+      ]
+    ],
+    "warning": "Formal institutional design alone is not enough. Power asymmetries can cause exclusion, capture and clientelism; function, enforcement, power relations and local context matter."
+  },
+  "causal": [
+    {
+      "title": "Institutions → exchange and investment",
+      "steps": [
+        "Clear rights",
+        "Credible contracts",
+        "Predictable enforcement",
+        "Lower uncertainty and transaction costs",
+        "More willingness to exchange and invest"
+      ],
+      "qualifier": "A possible pathway, not an automatic guarantee."
+    },
+    {
+      "title": "Institutions → firms and jobs",
+      "steps": [
+        "Stable rules and fair market access",
+        "Investment and entry incentives",
+        "Firm formation and experimentation",
+        "Competition and resource reallocation",
+        "Potential productivity and employment effects"
+      ],
+      "qualifier": "Infrastructure, skills, finance, technology, demand and management also matter."
+    },
+    {
+      "title": "Market failure → policy response",
+      "steps": [
+        "Externality / public good / market power",
+        "Private incentives diverge from social outcomes",
+        "Policy design",
+        "Implementation and enforcement",
+        "Possible improvement—or government failure"
+      ],
+      "qualifier": "The policy result depends on design, capacity, incentives and accountability."
+    }
+  ],
+  "india": {
+    "label": "India: a mixed economy with a changing policy framework",
+    "timeline": [
+      {
+        "period": "After independence",
+        "title": "Planning and a significant public-sector role",
+        "detail": "The state played a substantial role in strategic and basic industries; private enterprise continued within extensive licensing and controls."
+      },
+      {
+        "period": "1991",
+        "title": "Structural reforms",
+        "detail": "Following macroeconomic imbalances and a balance-of-payments crisis, India liberalised trade and investment, simplified firm entry in many areas, reduced industrial licensing and expanded private-sector participation."
+      },
+      {
+        "period": "Later decades",
+        "title": "Gradual and uneven evolution",
+        "detail": "Private participation expanded in areas such as telecom alongside a strengthened regulatory framework; public enterprises and state capacity remained important."
+      },
+      {
+        "period": "Constitutional framework",
+        "title": "Welfare and social justice principles",
+        "detail": "Directive Principles include reducing inequalities, securing adequate livelihood, distributing material resources for the common good and preventing harmful concentration of wealth. Article 37 says these principles guide governance but are not directly enforceable by courts."
+      }
+    ],
+    "employment": "Policy in telecom, infrastructure, education, labour, tax, trade, procurement and finance can change which firms enter, where they invest, what skills they demand and how work is organised. No single reform explains India's IT industry."
+  },
+  "countryLens": [
+    [
+      "United States",
+      "Market-oriented, with extensive regulation, taxation, public programmes and public spending."
+    ],
+    [
+      "Nordic economies",
+      "Private firms and open markets combined with larger tax-funded welfare states and coordinated labour institutions."
+    ],
+    [
+      "China",
+      "Market exchange and private enterprise coexist with extensive state ownership and direction in strategic sectors and significant party-state influence."
+    ]
+  ],
+  "jobs": [
+    "Contract enforcement can support outsourcing, supplier relationships and startups.",
+    "Competition and entry rules affect the number of employers and workers' outside options.",
+    "Education and training institutions shape skill supply.",
+    "Labour laws, collective bargaining, minimum wages and social insurance affect conditions and bargaining.",
+    "Tax, procurement and infrastructure spending shift demand across industries and regions.",
+    "Corruption, exclusion and capture can protect incumbents and restrict opportunity."
+  ],
+  "salary": "Institutions influence the labour-market environment; they do not mechanically set an individual's salary. Pay also depends on role, skills, productivity, scarcity, employer economics, labour supply, bargaining power, geography, selection and compensation structure.",
+  "limitations": [
+    "Market and command are ideal types; real economies are hybrids and vary by sector.",
+    "A law on paper does not prove effective enforcement or equal access.",
+    "Institutions and development influence each other, so causal identification is difficult.",
+    "Cross-country comparisons face measurement, endogeneity and context problems.",
+    "Regulation can correct market failures and protect workers; poorly designed regulation can raise costs or protect incumbents.",
+    "Deregulation can improve entry in some settings but worsen externalities, market power or worker insecurity in others.",
+    "Government capacity and political incentives matter alongside formal design.",
+    "There is no single institutional blueprint that can be transplanted unchanged."
+  ],
+  "sources": [
+    {
+      "name": "OpenStax · Principles of Economics 3e, §1.4",
+      "url": "https://openstax.org/books/principles-of-economics-3e/pages/1-4-how-to-organize-economies-an-overview-of-economic-systems",
+      "supports": "Economic-system ideal types; mixed economies; markets and regulation are intertwined."
+    },
+    {
+      "name": "World Bank · World Development Report 2017: Governance and the Law",
+      "url": "https://www.worldbank.org/en/publication/wdr2017",
+      "supports": "Commitment, coordination, cooperation; power asymmetries, exclusion and capture."
+    },
+    {
+      "name": "OECD · Government at a Glance 2025, Institutions and growth",
+      "url": "https://www.oecd.org/en/publications/2025/06/government-at-a-glance-2025_70e14c6c/full-report/institutions-and-growth_3a01ad72.html",
+      "supports": "Fair market access, competition, reliable enforcement, macro stability and corruption."
+    },
+    {
+      "name": "Government of India · Economic Survey, Product and Capital Market Reforms",
+      "url": "https://www.indiabudget.gov.in/budget2024-25%28I%29/economicsurvey/doc/echapter.pdf",
+      "supports": "1991 reforms, crisis context, trade and investment liberalisation and private-sector entry."
+    },
+    {
+      "name": "Constitution of India · Articles 37–39",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/359f70a69695affb9d72f8393102bd2e.pdf",
+      "supports": "Directive Principles, welfare, livelihood, distribution and concentration of wealth."
+    },
+    {
+      "name": "OECD · Scarpetta et al. (2002)",
+      "url": "https://doi.org/10.1787/547061627526",
+      "supports": "Regulation, firm dynamics and productivity; context matters."
+    },
+    {
+      "name": "OECD · Égert (2017)",
+      "url": "https://doi.org/10.1787/a4ece3c5-en",
+      "supports": "Regulation, investment and institutional moderation; empirical associations, not universal causal rules."
+    }
+  ]
+}
