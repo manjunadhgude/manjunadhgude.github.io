@@ -4589,7 +4589,7 @@ Good governance does not mean maximising surveillance or performance pay. It mea
     "sources_claims_mapped": true,
     "json_validated": true,
     "notion_saved": true,
-    "dashboard_full_library_pending": true,
+    "dashboard_full_library_pending": false,
     "part_3_complete": true
   }
 }
@@ -4602,5 +4602,5 @@ Good governance does not mean maximising surveillance or performance pay. It mea
 | Stage 1 — Parts 1–8 and internal integrated review | Complete |
 | Stage 2 / Part 1 — Why firms exist | Complete |
 | Stage 2 / Part 2 — Transaction costs, firm boundaries and make-or-buy | Complete |
-| Stage 2 / Part 3 — Ownership, control and agency problems | Researched and saved; full dashboard research-library integration pending |
+| Stage 2 / Part 3 — Ownership, control and agency problems | Researched, saved and full research library mirrored to GitHub |
 | Stage 2 overall | In progress |
