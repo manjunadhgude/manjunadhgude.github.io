@@ -3679,7 +3679,7 @@
         "sources_claims_mapped": true,
         "json_validated": true,
         "notion_saved": true,
-        "dashboard_full_library_pending": true,
+        "dashboard_full_library_pending": false,
         "part_3_complete": true
       }
     }
