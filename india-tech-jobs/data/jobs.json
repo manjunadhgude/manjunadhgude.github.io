@@ -1,0 +1,1698 @@
+{
+  "generated_at": "2026-11-13",
+  "source": "Notion database: AI/ML India — Hourly Job Tracker",
+  "source_url": "https://app.notion.com/p/b27904c4cf1543bdbd53dd8099ac9017",
+  "record_count": 99,
+  "has_more": true,
+  "records": [
+    {
+      "id": 1,
+      "role": "ML Research Engineer Intern, Training & Inference Systems",
+      "company": "SapientPriors",
+      "category": "Research Engineer / AI Research Engineer",
+      "location": "Bengaluru",
+      "experience": [
+        "Internship"
+      ],
+      "employer_tier": "Tier 4 — High-Potential Startup",
+      "compensation": "Not disclosed",
+      "fit_score": 83,
+      "status": "Open — official careers page still lists the 6–12 month ML Research Engineer Intern, Training & Inference Systems role; intern-specific requirements remain incompletely displayed; checked 2026-10-12",
+      "application_link": "https://www.sapientpriors.com/careers",
+      "first_seen": "2026-10-10",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 2,
+      "role": "ML Researcher Intern",
+      "company": "SapientPriors",
+      "category": "AI/ML Research Intern",
+      "location": "Bengaluru",
+      "experience": [
+        "Internship"
+      ],
+      "employer_tier": "Tier 4 — High-Potential Startup",
+      "compensation": "Not disclosed",
+      "fit_score": 80,
+      "status": "Open — official careers page still lists the 6–12 month ML Researcher Intern role; intern-specific requirements remain incompletely displayed; checked 2026-10-12",
+      "application_link": "https://www.sapientpriors.com/careers",
+      "first_seen": "2026-10-10",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 3,
+      "role": "AI/ML Research Intern",
+      "company": "Sabre AI Labs",
+      "category": "AI/ML Research Intern",
+      "location": "India",
+      "experience": [
+        "Students/recent graduates"
+      ],
+      "employer_tier": "Tier 4 — High-Potential Startup",
+      "compensation": "Not disclosed; official application explicitly warns that some opportunities may not include immediate financial compensation",
+      "fit_score": 74,
+      "status": "Live — official role and application pages active; recent-graduate eligibility uncertain; compensation may be absent",
+      "application_link": "https://careers.sabreailabs.in/apply?role=AI/ML+Research+Intern",
+      "first_seen": "2026-10-10",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 4,
+      "role": "AI / ML Engineer",
+      "company": "DKAI Technologies",
+      "category": "AI/ML Engineer",
+      "location": "India — remote/hybrid",
+      "experience": [
+        "0–2 YOE"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Open — official careers page lists role; eligibility uncertain because minimum 1+ year MLOps/LLMOps is required; checked 2026-10-10",
+      "application_link": "https://dkaitech.com/careers/ai-ml-engineer-llmops/",
+      "first_seen": "2026-10-10",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": 5,
+      "role": "Deep Learning Researcher",
+      "company": "Humans Care Foundation",
+      "category": "AI/ML Research Intern",
+      "location": "Remote India",
+      "experience": [
+        "Internship",
+        "Recent grad/fresher"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Paid internship for one month; amount not disclosed. The page separately lists a ₹500 two-week traineeship track; this is not assumed to be the internship stipend.",
+      "fit_score": null,
+      "status": "Open — official careers page lists a paid one-month internship, extendable based on performance; checked 2026-10-10",
+      "application_link": "https://www.thehcf.in/careers/deep-learning-researcher/apply",
+      "first_seen": "2026-10-10",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 6,
+      "role": "ML Internship",
+      "company": "Latent Force Intelligence Private Limited (LatentForce)",
+      "category": "AI/ML Research Intern",
+      "location": "Bengaluru",
+      "experience": [
+        "Internship",
+        "Fresher"
+      ],
+      "employer_tier": "Tier 4 — High-Potential Startup",
+      "compensation": "Paid internship; amount not disclosed; PPO opportunity",
+      "fit_score": 83,
+      "status": "Availability uncertain — official careers page lists role, but start-date text says as early as January 2026; confirm before applying",
+      "application_link": "https://www.latentforce.ai/careers",
+      "first_seen": "2026-10-10",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 7,
+      "role": "TDP AI/ML Engineer",
+      "company": "[Samta.ai](http://Samta.ai) (Samta Infotech)",
+      "category": "AI/ML Engineer",
+      "location": "India — on-site",
+      "experience": [
+        "0–1 year",
+        "Internship"
+      ],
+      "employer_tier": "Tier 4 — High-Potential Startup",
+      "compensation": "Not disclosed",
+      "fit_score": 74,
+      "status": "Live — official careers page and application form active; checked 2026-10-10",
+      "application_link": "https://samta.ai/careers/jobs/68ac5a9974ca10b421f8df7e/apply",
+      "first_seen": "2026-10-10",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": 8,
+      "role": "AI/ML Engineer Intern",
+      "company": "Inferova Technologies",
+      "category": "AI/ML Engineer",
+      "location": "Remote India",
+      "experience": [
+        "Internship",
+        "Recent grad/fresher"
+      ],
+      "employer_tier": "Tier 4 — High-Potential Startup",
+      "compensation": "Competitive stipend; amount not disclosed",
+      "fit_score": 80,
+      "status": "Live — official careers page checked 2026-10-10",
+      "application_link": "https://inferova.com/careers-ai-ml",
+      "first_seen": "2026-10-10",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 9,
+      "role": "DS/ML Intern",
+      "company": "Workloom",
+      "category": "ML Engineer",
+      "location": "Bengaluru — on-site",
+      "experience": [
+        "Internship",
+        "Students/recent grads <1 YOE"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Live — official Lever application page active; checked 2026-10-10",
+      "application_link": "https://jobs.lever.co/epifi/08fc1577-4593-4b94-b66b-08e638d29f37",
+      "first_seen": "2026-10-10",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": 10,
+      "role": "Campus-Trainee — Platform Engineer",
+      "company": "HCLTech",
+      "category": "Foundation Model Engineer",
+      "location": "Gautam Buddha Nagar",
+      "experience": [
+        "0–1 YOE; student/recent grad",
+        "Fresher"
+      ],
+      "employer_tier": "Tier 3 — Strong Product",
+      "compensation": "Not disclosed",
+      "fit_score": 79,
+      "status": "Live — official HCLTech careers page active; checked 2026-10-10",
+      "application_link": "https://careers.hcltech.com/job/Campus-Trainee/171242-en_US",
+      "first_seen": "2026-10-10",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": 11,
+      "role": "Associate Solution/ML Engineer",
+      "company": "Pristine AI (Pristine Infotech)",
+      "category": "AI/ML Engineer",
+      "location": "Mumbai",
+      "experience": [
+        "Entry-level"
+      ],
+      "employer_tier": "Tier 4 — High-Potential Startup",
+      "compensation": "Competitive salary; numeric amount not disclosed",
+      "fit_score": 70,
+      "status": "Open — official careers page lists role; checked 2026-10-10",
+      "application_link": "https://pristineai.com/associate-solution-ml-engineer/",
+      "first_seen": "2026-10-10",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 12,
+      "role": "Junior AI Engineer",
+      "company": "Trackmind",
+      "category": "AI Engineer",
+      "location": "Hyderabad onsite",
+      "experience": [
+        "0–2",
+        "Internship"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Eligibility uncertain — JD states 6 months–2 years; listing conflicts on internship vs full-time; checked 2026-10-10",
+      "application_link": "https://jobs.lever.co/trackmind/ad66c0ec-1ae9-47cb-9d5d-83ae1cb6d200",
+      "first_seen": "2026-10-10",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": 13,
+      "role": "Forward Deployed Engineer Intern",
+      "company": "AiStudio",
+      "category": "AI Software Engineer",
+      "location": "Remote",
+      "experience": [
+        "Internship"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Open — official Ashby listing surfaced; checked 2026-10-10",
+      "application_link": "https://jobs.ashbyhq.com/aistudio/b4a4f30b-ea11-41c7-bb46-9984165d768b",
+      "first_seen": "2026-10-10",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": 14,
+      "role": "GenAI Trainee — LNT/GT/1820562",
+      "company": "L&T Precision Engineering & Systems",
+      "category": "Unclassified",
+      "location": "Powai",
+      "experience": [
+        "0–2"
+      ],
+      "employer_tier": "Tier 3 — Strong Product",
+      "compensation": "Not disclosed",
+      "fit_score": 81,
+      "status": "Live — official L&T portal listing; end date 2027-02-09; checked 2026-10-10",
+      "application_link": "https://larsentoubrocareers.peoplestrong.com/job/detail/LNT_GT_1820562",
+      "first_seen": "2026-10-10",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": 15,
+      "role": "ML Engineer",
+      "company": "Ignosis",
+      "category": "ML Engineer",
+      "location": "India",
+      "experience": [
+        "0–2"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed; company says it offers an industry-competitive compensation package, without a numeric amount.",
+      "fit_score": null,
+      "status": "Live — listed on official company careers page; checked 2026-10-10",
+      "application_link": "https://ignosis.ai/careers/ml-engineer",
+      "first_seen": "2026-10-10",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": 16,
+      "role": "AI / ML Intern",
+      "company": "YOTTIX",
+      "category": "Unclassified",
+      "location": "Bengaluru — on-site",
+      "experience": [
+        "Final-year/recent grad; 0–1"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Live — official company careers page",
+      "application_link": "https://www.yottix.com/careers.html",
+      "first_seen": "2026-10-04T22:31:00.000Z",
+      "last_checked": "2026-10-04T22:31:00.000Z"
+    },
+    {
+      "id": 17,
+      "role": "Intern - AI Engineering",
+      "company": "Nuvama Group",
+      "category": "Unclassified",
+      "location": "Not specified",
+      "experience": [],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed; listed as competitive",
+      "fit_score": null,
+      "status": "Live — actively hiring listing",
+      "application_link": "https://devsunite.com/jobs/nuvama-group-intern-ai-engineering-mumbai-aug2026",
+      "first_seen": "2026-10-05",
+      "last_checked": "2026-10-05"
+    },
+    {
+      "id": 18,
+      "role": "AI Forward Deployed Engineer Intern",
+      "company": "Fundamento",
+      "category": "Unclassified",
+      "location": "Not specified",
+      "experience": [],
+      "employer_tier": "Not classified",
+      "compensation": "₹35,000–₹40,000/month stipend (third-party current listing; verify with employer)",
+      "fit_score": null,
+      "status": "Live — current hiring post/listing",
+      "application_link": "https://docs.google.com/forms/d/e/1FAIpQLSfx_aOOkZxU1zuKq-2GEviAsLMMKz4QVeON8YbxUz3LBcBWBA/viewform",
+      "first_seen": "2026-10-05",
+      "last_checked": "2026-10-05"
+    },
+    {
+      "id": 19,
+      "role": "AI Engineer Intern",
+      "company": "craftAI",
+      "category": "Unclassified",
+      "location": "Not specified",
+      "experience": [],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed in current employer hiring post",
+      "fit_score": null,
+      "status": "Live — current hiring post from craftAI team",
+      "application_link": "https://lnkd.in/dfubRakC",
+      "first_seen": "2026-10-05",
+      "last_checked": "2026-10-05"
+    },
+    {
+      "id": 20,
+      "role": "AI Engineer / Applied AI — Forward Deployed Track",
+      "company": "Banao Technologies",
+      "category": "Unclassified",
+      "location": "Not specified",
+      "experience": [],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed; role states compensation is skill/progression based",
+      "fit_score": null,
+      "status": "Live — current ATS listing",
+      "application_link": "https://atslite.interviewgod.ai/banao/careers/340005ec-6a0c-497e-8b6e-cb0d59c1ce52",
+      "first_seen": "2026-10-05",
+      "last_checked": "2026-10-05"
+    },
+    {
+      "id": 21,
+      "role": "AI Engineer 1",
+      "company": "GIVA",
+      "category": "Unclassified",
+      "location": "Not specified",
+      "experience": [],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed on official careers page",
+      "fit_score": null,
+      "status": "Live — current listing; official careers page exists",
+      "application_link": "https://www.giva.co/pages/careers",
+      "first_seen": "2026-10-05",
+      "last_checked": "2026-10-05"
+    },
+    {
+      "id": 22,
+      "role": "Software & AI Engineering Intern",
+      "company": "OSWAR teck",
+      "category": "AI Software Engineer",
+      "location": "Jaipur",
+      "experience": [
+        "0 years; students/recent B.E./B.Tech graduates"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Live — current listing",
+      "application_link": "https://in.linkedin.com/jobs/view/software-ai-engineering-intern-at-oswar-teck-4472591291",
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 23,
+      "role": "Deep Learning Intern — Healthcare AI",
+      "company": "SeaportAI",
+      "category": "Computer Vision Engineer",
+      "location": "Chennai",
+      "experience": [
+        "Internship; 0–4 years shown on current job board listing"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Live — current listing",
+      "application_link": "https://seaportai.com/careers.html",
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 24,
+      "role": "Generative AI Research Intern",
+      "company": "Wolters Kluwer India",
+      "category": "AI/ML Research Intern",
+      "location": "Faridabad",
+      "experience": [
+        "2026/2027 graduates; 0 YOE"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "₹25,000/month",
+      "fit_score": null,
+      "status": "Live — current listing; third-party application mirror",
+      "application_link": "https://careers.wolterskluwer.com/en/early-careers",
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 25,
+      "role": "Generative AI Research Intern",
+      "company": "Ashok Leyland Digital",
+      "category": "AI/ML Research Intern",
+      "location": "Ghaziabad",
+      "experience": [
+        "2026/2027/2028 graduates; 0 YOE"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "₹18,000/month",
+      "fit_score": null,
+      "status": "Live — current listing; third-party application mirror",
+      "application_link": "https://www.ashokleyland.com/",
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 26,
+      "role": "AI Engineering Intern",
+      "company": "Appening Infotech (listed by TheCophil)",
+      "category": "AI Engineer",
+      "location": "Remote",
+      "experience": [
+        "2024 / 2025 / 2026 passouts; internship"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "₹20,000–₹25,000/month stipend",
+      "fit_score": null,
+      "status": "Live — current listing",
+      "application_link": "https://in.indeed.com/q-ai-engineer-internship-l-remote-jobs.html",
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 27,
+      "role": "INTERN ML DEVELOPER",
+      "company": "Great Minds",
+      "category": "ML Engineer",
+      "location": "Chennai",
+      "experience": [
+        "0–2 years"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Live — current careers listing",
+      "application_link": "https://www.greatmindstechnology.in/career.php",
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 28,
+      "role": "AI/ML Intern",
+      "company": "Redant Labs Private Limited",
+      "category": "Computer Vision Engineer",
+      "location": "Perungudi",
+      "experience": [
+        "Internship; fresher-friendly"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "₹15,000/month",
+      "fit_score": null,
+      "status": "Live — current listing",
+      "application_link": "https://redantlabs.io/",
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 29,
+      "role": "AI Engineering Intern",
+      "company": "Sofsure",
+      "category": "AI Engineer",
+      "location": "Chandigarh",
+      "experience": [
+        "Bachelor's / pursuing degree in CS",
+        "AI/ML",
+        "Data Science or related; internship"
+      ],
+      "employer_tier": "Tier 4 — High-Potential Startup",
+      "compensation": "Monthly stipend; amount not disclosed",
+      "fit_score": 78,
+      "status": "Live — official company careers page",
+      "application_link": "https://sofsure.com/careers/ai-engineering-intern",
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": 30,
+      "role": "AI Engineer Internship",
+      "company": "AAAMT Verticals Private Limited",
+      "category": "AI Engineer",
+      "location": "Hyderabad",
+      "experience": [
+        "B.Tech/B.E. students in CS/IT/AI/Data Science or related; 6-month full-time internship; start window Sep 11–Oct 16",
+        "2026"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "₹10,000–₹12,000/month stipend",
+      "fit_score": null,
+      "status": "Live — current listing",
+      "application_link": "https://broxer.com/internships/ai-engineer-internship-btgx36",
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 31,
+      "role": "Intern AIML Incubator",
+      "company": "IQVIA",
+      "category": "AI/ML Engineer",
+      "location": "Kochi in-office",
+      "experience": [
+        "Fresher/final-year/recent grad"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Previously reported",
+      "application_link": null,
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 32,
+      "role": "Audio/Video Analytics & Computer Vision Research Intern",
+      "company": "Sony India Software",
+      "category": "AI/ML Research Intern",
+      "location": "Bengaluru",
+      "experience": [
+        "Internship"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Previously reported; status not revalidated in tracker",
+      "application_link": null,
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 33,
+      "role": "AI Intern",
+      "company": "Marvell",
+      "category": "AI Engineer",
+      "location": "India",
+      "experience": [
+        "Internship"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Closed/stale",
+      "application_link": null,
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 34,
+      "role": "Computer Vision Engineer Intern",
+      "company": "Augle AI",
+      "category": "Computer Vision Engineer",
+      "location": "Pune onsite",
+      "experience": [
+        "Final-year/recent grad; 0–1"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Previously reported",
+      "application_link": null,
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 35,
+      "role": "AI/ML Engineering Intern",
+      "company": "Daice Labs",
+      "category": "AI/ML Engineer",
+      "location": "India remote",
+      "experience": [
+        "Students/recent grads <1 YOE"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Previously reported",
+      "application_link": null,
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 36,
+      "role": "AI Engineer Intern",
+      "company": "Meraki Labs",
+      "category": "AI Engineer",
+      "location": "India",
+      "experience": [
+        "Internship; strong preference for 9+ CGPA/top-tier/prior research/product internships"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Excluded for current eligibility fit",
+      "application_link": null,
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 37,
+      "role": "AI Research Intern",
+      "company": "Lexsi Labs",
+      "category": "AI/ML Research Intern",
+      "location": "Mumbai Metro / remote",
+      "experience": [
+        "Internship"
+      ],
+      "employer_tier": "Tier 4 — High-Potential Startup",
+      "compensation": "Not disclosed",
+      "fit_score": 84,
+      "status": "Previously reported",
+      "application_link": null,
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 38,
+      "role": "Computer Vision Engineer Intern",
+      "company": "Wadhwani AI",
+      "category": "Computer Vision Engineer",
+      "location": "Pune — hybrid/on-site",
+      "experience": [
+        "2025/2026/2027 grads; fresher-friendly; 3-month internship"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Historical / previously reported; status not revalidated in this consolidation",
+      "application_link": null,
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 39,
+      "role": "Associate Machine Learning Engineer",
+      "company": "CapeStart",
+      "category": "ML Engineer",
+      "location": "Nagercoil",
+      "experience": [
+        "0–2"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Previously reported; status not revalidated in tracker",
+      "application_link": null,
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 40,
+      "role": "Deep Learning / Machine Learning Research Intern — LLMs & Vision Language Models",
+      "company": "HyperVerge",
+      "category": "AI/ML Research Intern",
+      "location": "Bengaluru onsite",
+      "experience": [
+        "0 YOE; 2026 graduates 6 months"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Closed / stale",
+      "application_link": null,
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 41,
+      "role": "AI Engineer Intern",
+      "company": "Onelogica",
+      "category": "AI Engineer",
+      "location": "India",
+      "experience": [
+        "Internship"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Closed / stale",
+      "application_link": null,
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 42,
+      "role": "Research Intern – AI",
+      "company": "GE HealthCare",
+      "category": "AI/ML Research Intern",
+      "location": "India",
+      "experience": [
+        "Internship"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Closed/stale",
+      "application_link": null,
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 43,
+      "role": "NLP (Natural Language Processing) Intern",
+      "company": "Rapido",
+      "category": "NLP Engineer",
+      "location": "Bengaluru — hybrid",
+      "experience": [
+        "Students/freshers/recent graduates; 3-month internship"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Historical / previously reported; status not revalidated in this consolidation",
+      "application_link": null,
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 44,
+      "role": "Intern – Machine Learning Engineer",
+      "company": "PhoenixAI",
+      "category": "ML Engineer",
+      "location": "Mumbai hybrid",
+      "experience": [
+        "Internship"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Previously reported; status not revalidated in tracker",
+      "application_link": null,
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 45,
+      "role": "Software Engineer Intern (AI/ML & Agentic AI)",
+      "company": "SkillsCapital",
+      "category": "AI Software Engineer",
+      "location": "Remote India",
+      "experience": [
+        "0–4"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Previously reported; status not revalidated in tracker",
+      "application_link": null,
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 46,
+      "role": "GenAI Developer Intern",
+      "company": "iQud Informatics",
+      "category": "GenAI Engineer",
+      "location": "GIFT City",
+      "experience": [
+        "Internship"
+      ],
+      "employer_tier": "Other / Not in Report",
+      "compensation": "Not disclosed",
+      "fit_score": 76,
+      "status": "Previously reported; status not revalidated in tracker",
+      "application_link": null,
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 47,
+      "role": "GenAI Intern",
+      "company": "[Orbo.ai](http://Orbo.ai)",
+      "category": "GenAI Engineer",
+      "location": "Mumbai office",
+      "experience": [
+        "0–2"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Previously reported; status not revalidated in tracker",
+      "application_link": null,
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 48,
+      "role": "AI Engineer Intern",
+      "company": "Recipto",
+      "category": "AI Engineer",
+      "location": "Hyderabad onsite",
+      "experience": [
+        "0–1; students/freshers/recent grads"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Previously reported; status not revalidated in tracker",
+      "application_link": null,
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 49,
+      "role": "AI Engineer Intern",
+      "company": "Plainsurf Solutions",
+      "category": "AI Engineer",
+      "location": "Pune Kondhwa",
+      "experience": [
+        "Fresher"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Previously reported; status not revalidated in tracker",
+      "application_link": null,
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 50,
+      "role": "GEN AI Intern",
+      "company": "PrwaTech",
+      "category": "GenAI Engineer",
+      "location": "Bengaluru onsite",
+      "experience": [
+        "Internship"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Previously reported; status not revalidated in tracker",
+      "application_link": null,
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04"
+    },
+    {
+      "id": 51,
+      "role": "ML Research Intern",
+      "company": "Twilight AI Labs",
+      "category": "AI/ML Research Intern",
+      "location": "Remote India",
+      "experience": [
+        "Internship"
+      ],
+      "employer_tier": "Other / Not in Report",
+      "compensation": "Not disclosed; the official page does not state whether this internship is paid.",
+      "fit_score": 64,
+      "status": "Live — official careers page lists a remote ML Research Intern role, but the public JD is sparse (Vision LLMs, papers, experiments); no detailed eligibility, duration or compensation information. Apply by email as directed on the page; verify scope and paid status. Checked 2026-10-14.",
+      "application_link": "https://www.twilightlabs.in/career/",
+      "first_seen": "2026-10-14",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 52,
+      "role": "AI/ML Engineering Intern",
+      "company": "VeloceAI",
+      "category": "AI Engineer",
+      "location": "Remote India",
+      "experience": [
+        "Internship"
+      ],
+      "employer_tier": "Other / Not in Report",
+      "compensation": "Not disclosed",
+      "fit_score": 69,
+      "status": "Live — official careers page lists the role and links to an application form; remote, 3–6 months, immediate joining stated. No numeric experience/degree requirement or compensation amount disclosed. Funding/runway not independently verified; checked 2026-10-14.",
+      "application_link": "https://veloceai.in/careers.html",
+      "first_seen": "2026-10-14",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 53,
+      "role": "AI Research Intern",
+      "company": "VeloceAI",
+      "category": "AI/ML Research Intern",
+      "location": "Remote India",
+      "experience": [
+        "Internship"
+      ],
+      "employer_tier": "Other / Not in Report",
+      "compensation": "Not disclosed",
+      "fit_score": 73,
+      "status": "Live — official careers page lists the role and links to an application form; remote, 3–6 months, immediate joining stated. No numeric experience/degree requirement or compensation amount disclosed. Funding/runway not independently verified; checked 2026-10-14.",
+      "application_link": "https://veloceai.in/careers.html",
+      "first_seen": "2026-10-14",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 54,
+      "role": "Research/ML/Systems Engineer — Training & Inference at Scale (General Intake)",
+      "company": "BharatGen",
+      "category": "Research Engineer / AI Research Engineer",
+      "location": "India",
+      "experience": [
+        "Freshers/recent grads",
+        "Internship"
+      ],
+      "employer_tier": "Tier 1 — Foundation Model",
+      "compensation": "Not disclosed; official page mentions competitive salaries, performance bonuses and equity participation but gives no numeric amount.",
+      "fit_score": 88,
+      "status": "Open — official general talent intake explicitly welcomes junior engineers, new graduates and interns; not a discrete requisition; checked 2026-10-14.",
+      "application_link": "https://docs.google.com/forms/d/e/1FAIpQLSdH08Kj4Sq4czA55hqhsue9IOwS736FuUpKUHURK_raNfJ7Jg/viewform?embedded=true",
+      "first_seen": "2026-10-14",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 55,
+      "role": "AI Research Intern",
+      "company": "Vestval",
+      "category": "AI/ML Research Intern",
+      "location": "India — hybrid",
+      "experience": [
+        "Internship",
+        "Students/recent graduates"
+      ],
+      "employer_tier": "Other / Not in Report",
+      "compensation": "Paid internship; monthly stipend amount not disclosed. Official page says stipend is discussed at offer stage.",
+      "fit_score": 75,
+      "status": "Live — official Vestval careers page lists the role and accepts applications through the company careers form; checked 2026-10-14. Startup funding/runway not independently verified.",
+      "application_link": "https://www.vestval.com/careers",
+      "first_seen": "2026-10-14",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 56,
+      "role": "AI Intern",
+      "company": "Vestval",
+      "category": "GenAI Engineer",
+      "location": "Remote India",
+      "experience": [
+        "Internship",
+        "Students/recent graduates"
+      ],
+      "employer_tier": "Other / Not in Report",
+      "compensation": "Paid internship; monthly stipend amount not disclosed. Official page says stipend is discussed at offer stage.",
+      "fit_score": 69,
+      "status": "Live — official Vestval careers page lists the role and accepts applications through the company careers form; checked 2026-10-14. Startup funding/runway not independently verified.",
+      "application_link": "https://www.vestval.com/careers",
+      "first_seen": "2026-10-14",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 57,
+      "role": "Software Engineering Intern",
+      "company": "Ressl AI",
+      "category": "AI/ML Research Intern",
+      "location": "Bengaluru / remote India",
+      "experience": [
+        "Internship",
+        "No experience required"
+      ],
+      "employer_tier": "Tier 4 — High-Potential Startup",
+      "compensation": "₹25,000–₹75,000 INR per month (internship compensation; as listed by Y Combinator).",
+      "fit_score": 83,
+      "status": "Live — current Y Combinator / Work at a Startup listing is accessible and has an Apply route; eval-system/research experience is a plus, not required. Checked 2026-10-14.",
+      "application_link": "https://www.ycombinator.com/companies/ressl-ai/jobs/D1H6F29-software-engineering-intern",
+      "first_seen": "2026-10-14",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 58,
+      "role": "Applied AI Engineer",
+      "company": "LivingAI Solutions",
+      "category": "Applied AI Engineer",
+      "location": "Bengaluru",
+      "experience": [
+        "Entry-level"
+      ],
+      "employer_tier": "Tier 4 — High-Potential Startup",
+      "compensation": "Not disclosed",
+      "fit_score": 80,
+      "status": "Live — official careers page lists a junior full-time Bengaluru on-site role; no numeric experience requirement or closing date stated. Checked 2026-10-14.",
+      "application_link": "https://livingai.in/careers/",
+      "first_seen": "2026-10-14",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 59,
+      "role": "Binance Accelerator Program - Applied AI Application Engineer",
+      "company": "Binance",
+      "category": "Applied AI Engineer",
+      "location": "Remote",
+      "experience": [
+        "Fresher/final-year/recent grad"
+      ],
+      "employer_tier": "Tier 3 — Strong Product",
+      "compensation": "Not disclosed; internship. Official JD says “competitive salary and company benefits” but gives no numeric stipend or package.",
+      "fit_score": 77,
+      "status": "Live — official Lever application page active; Asia/remote; recent graduates accepted. JD specifies expected graduation 2026 or 2027 and a 6-month full-time commitment; confirm India and completed-2026 eligibility. Checked 2026-10-14.",
+      "application_link": "https://jobs.lever.co/binance/ef77ec2f-1ffa-49bc-a18d-9f019ca1edae",
+      "first_seen": "2026-10-14",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 60,
+      "role": "AI Engineer Intern",
+      "company": "RAGSPRO",
+      "category": "AI Engineer",
+      "location": "Remote India",
+      "experience": [
+        "Internship",
+        "Fresher / student / early-career"
+      ],
+      "employer_tier": "Tier 4 — High-Potential Startup",
+      "compensation": "Not disclosed; page mentions performance-based bonuses and stipends without a guaranteed amount",
+      "fit_score": 74,
+      "status": "Live — official careers page lists a remote 3–6 month AI Engineer Intern role and says applications are reviewed weekly; eligibility and compensation amount are not disclosed. Checked 2026-10-14.",
+      "application_link": "https://www.ragspro.com/careers",
+      "first_seen": "2026-10-14",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 61,
+      "role": "AI Engineer Intern — 4-month in-office internship",
+      "company": "Ethereal Labs",
+      "category": "AI Engineer",
+      "location": "Bengaluru — on-site",
+      "experience": [
+        "Internship",
+        "0–1 YOE; student/recent grad"
+      ],
+      "employer_tier": "Tier 4 — High-Potential Startup",
+      "compensation": "Not disclosed by the current company-posted source",
+      "fit_score": 70,
+      "status": "Live with eligibility caveat — company LinkedIn post from approximately two weeks ago links to a direct application form; detailed secondary job page now returns 410. Confirm intake and whether 1 year of experience is mandatory. Checked 2026-10-14.",
+      "application_link": "https://binary.so/534mBpY",
+      "first_seen": "2026-10-14",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 62,
+      "role": "Applied AI Engineer Intern",
+      "company": "LivingAI Solutions",
+      "category": "Applied AI Engineer",
+      "location": "Bengaluru — on-site",
+      "experience": [
+        "Internship",
+        "Fresher / student / early-career"
+      ],
+      "employer_tier": "Tier 4 — High-Potential Startup",
+      "compensation": "Stipend + hardware; stipend amount not disclosed",
+      "fit_score": 84,
+      "status": "Live — official careers page lists the Bengaluru on-site internship; no explicit experience requirement or closing date. Stipend + hardware mentioned, amount not disclosed. Checked 2026-10-14.",
+      "application_link": "https://livingai.in/careers/",
+      "first_seen": "2026-10-14",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 63,
+      "role": "ML Engineer Intern",
+      "company": "vINe AI",
+      "category": "ML Engineer",
+      "location": "Remote India",
+      "experience": [
+        "Internship",
+        "Fresher / student / early-career"
+      ],
+      "employer_tier": "Tier 4 — High-Potential Startup",
+      "compensation": "Not disclosed",
+      "fit_score": 80,
+      "status": "Live — official careers page currently lists the remote ML Engineer Intern role and provides a direct application form; experience threshold, stipend and cohort dates are not disclosed. Checked 2026-10-14.",
+      "application_link": "https://docs.google.com/forms/d/e/1FAIpQLSe9Yu5hK6qu4LaZ4nHr2wpnouQh7p7R4vIHNQ4E8zI_8PjbVg/viewform?usp=send_form",
+      "first_seen": "2026-10-14",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 64,
+      "role": "AI Engineer Intern",
+      "company": "Foreset AI",
+      "category": "AI Engineer",
+      "location": "Bengaluru hybrid",
+      "experience": [
+        "Internship",
+        "No experience required"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Stipend: ₹15,000–₹25,000 per month. Duration: 3 months, with extension based on performance.",
+      "fit_score": null,
+      "status": "Live — official careers page lists an immediate-start internship; 3 months with possible extension based on performance. Checked 2026-10-13.",
+      "application_link": "https://www.foreset.ai/careers",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": 65,
+      "role": "AI/ML Engineer Intern",
+      "company": "Teal India",
+      "category": "AI/ML Engineer",
+      "location": "Bengaluru",
+      "experience": [
+        "Internship",
+        "0–1",
+        "No experience required"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "₹25,000–₹35,000 as displayed on Wellfound; the listing does not specify the pay period, so verify whether this is monthly.",
+      "fit_score": null,
+      "status": "Live with source caveat — Wellfound marks the listing actively hiring and reposted 5 days ago; an official company careers page for this exact requisition was not located. Checked 2026-10-13.",
+      "application_link": "https://wellfound.com/jobs/3991488-ai-ml-engineer",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": 66,
+      "role": "AI Engineer Intern",
+      "company": "VAIA",
+      "category": "LLM Engineer",
+      "location": "Bengaluru",
+      "experience": [
+        "Internship",
+        "No experience required",
+        "Fresher; recent grad"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Internship stipend described as market-aligned; exact amount not disclosed.",
+      "fit_score": null,
+      "status": "Availability uncertain — Wellfound marks the listing actively hiring and recently reposted, but the listing appears several months old and an official company careers page for this exact requisition was not located. Confirm intake directly before applying. Checked 2026-10-13.",
+      "application_link": "https://wellfound.com/jobs/4235711-ai-engineer-intern",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": 67,
+      "role": "AI applied engineer - Voice first (Internship)",
+      "company": "SuperKalam",
+      "category": "Applied AI Engineer",
+      "location": "Remote",
+      "experience": [
+        "Internship",
+        "Fresher / student / early-career"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Stipend: INR 25,000–40,000 per month. Full-time internship, 4–6+ months. No full-time CTC disclosed.",
+      "fit_score": null,
+      "status": "Live with freshness caveat — current YC company job page lists the role and an application form; start date/intake is not stated, so confirm availability. Eligibility depends on prior AI/ML projects or internship and hands-on voice-agent work. Checked 2026-10-13.",
+      "application_link": "https://forms.gle/izaG2ihm3eNikQri8",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": 68,
+      "role": "AI / ML Researcher-Engineer (One)",
+      "company": "hussh",
+      "category": "Research Engineer / AI Research Engineer",
+      "location": "Pune",
+      "experience": [
+        "Fresher / student / early-career"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Pune, India annual base range: INR 28–55 LPA for the role's level; full-time roles also include equity and annual bonus. Actual offer depends on level, location, and experience.",
+      "fit_score": null,
+      "status": "Live — official careers page lists one AI/ML Researcher-Engineer role. Fresher eligibility is uncertain: no years-of-experience filter is stated, but the JD requires published work or a shipped system whose core idea was yours. Checked 2026-10-13.",
+      "application_link": "https://careers.hussh.ai/open-roles/ai-ml-researcher-engineer",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": 69,
+      "role": "AI & Agent Engineering Intern",
+      "company": "hussh",
+      "category": "AI Engineer",
+      "location": "Pune",
+      "experience": [
+        "Internship",
+        "Students/recent graduates"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Paid internship; stipend amount not disclosed; PPO not automatic.",
+      "fit_score": null,
+      "status": "Live — official careers page lists the paid Pune campus internship; students/recent graduates accepted. Stipend amount and exact start date are stated in the written offer; PPO is not automatic. Checked 2026-10-13.",
+      "application_link": "https://careers.hussh.ai/open-roles/ai-agent-engineering-intern-pune",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": 70,
+      "role": "Applied AI/ML Intern",
+      "company": "Banyan Intelligence",
+      "category": "Applied AI Engineer",
+      "location": "Bengaluru hybrid",
+      "experience": [
+        "Internship"
+      ],
+      "employer_tier": "Tier 4 — High-Potential Startup",
+      "compensation": "Not disclosed",
+      "fit_score": 78,
+      "status": "Eligibility-uncertain — official careers page is active and lists a Bengaluru hybrid internship; JD says candidates should be pursuing a Bachelor's or Master's degree, so eligibility for a 2026 graduate is unclear. Checked 2026-10-13.",
+      "application_link": "https://banyanintelligence.com/careers/applied-ai-ml-intern",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 71,
+      "role": "Machine Learning Intern — Imitation & Reinforcement Learning",
+      "company": "Der Autobot Pvt Ltd",
+      "category": "AI/ML Research Intern",
+      "location": "Andhra Pradesh",
+      "experience": [
+        "Internship",
+        "0 YOE; final-year/recent grad"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Live — recent employer-posted LinkedIn listing; 3–6 month full-time on-site internship with October 2026 start; confirm exact site because an aggregator shows a conflicting location; checked 2026-10-13.",
+      "application_link": "https://in.linkedin.com/jobs/view/robotics-ai-interns-at-der-autobot-pvt-ltd-4475101734",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": 72,
+      "role": "AI Engineer",
+      "company": "Logisoft Technologies Inc",
+      "category": "AI Engineer",
+      "location": "Hyderabad onsite",
+      "experience": [
+        "Fresher",
+        "0–1 year"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Live — official company job page shows full-time fresher opening, 2 positions, closing 2026-12-31; checked 2026-10-13.",
+      "application_link": "https://logisofttechinc.com/jobs/ai-engineer-2/",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": 73,
+      "role": "AI/ML Engineering Intern — Healthcare AI",
+      "company": "SOLAIERA",
+      "category": "AI/ML Engineer",
+      "location": "Andhra Pradesh",
+      "experience": [
+        "Internship",
+        "Final-year/recent grad; 0–1"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Live — employer-posted LinkedIn listing shows Apply; 3–6 month internship for final-year/recent [B.Tech](http://B.Tech) graduates; application by email; checked 2026-10-13.",
+      "application_link": "https://in.linkedin.com/jobs/view/ai-ml-engineering-intern-%E2%80%94-healthcare-ai-at-solaiera-4474031425",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": 74,
+      "role": "Software Engineering Intern, Environment Engineering",
+      "company": "Evaratus (Scaler AI Labs)",
+      "category": "AI/ML Research Intern",
+      "location": "Bengaluru — on-site",
+      "experience": [
+        "Internship"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Availability uncertain — official Ashby listing is still indexed and the application page resolves, but its stated in-office start date of 2026-07-20 has passed. Confirm whether a new cohort is accepting applicants before applying; checked 2026-10-13.",
+      "application_link": "https://jobs.ashbyhq.com/evaratus/88fcad6f-930a-4c3c-ad6d-04f2d46ca314",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": 75,
+      "role": "GenAI Trainee — LNT/GT/1820286 (CV + ML)",
+      "company": "L&T Precision Engineering & Systems",
+      "category": "GenAI Engineer",
+      "location": "Powai",
+      "experience": [
+        "0–2 YOE; 2026 graduate"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Live — official L&T application page resolves; current secondary listings describe a GenAI/ML/CV trainee role, but the official detailed JD was not fully readable in this check. Verify exact requirements in the portal before applying; checked 2026-10-13.",
+      "application_link": "https://larsentoubrocareers.peoplestrong.com/job/detail/LNT_GT_1820286",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": 76,
+      "role": "Junior AI Engineer — Generative AI & Document Intelligence",
+      "company": "Wyre AI",
+      "category": "GenAI Engineer",
+      "location": "Remote — India",
+      "experience": [
+        "0–2 YOE"
+      ],
+      "employer_tier": "Tier 4 — High-Potential Startup",
+      "compensation": "Not disclosed",
+      "fit_score": 74,
+      "status": "Live — official careers page lists the India-remote full-time role; 0–2 years; checked 2026-10-13.",
+      "application_link": "https://wyreai.io/careers/",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 77,
+      "role": "AI Research Intern",
+      "company": "ByteHubble",
+      "category": "AI/ML Research Intern",
+      "location": "Remote — India",
+      "experience": [
+        "0–1 YOE; student/recent grad"
+      ],
+      "employer_tier": "Tier 4 — High-Potential Startup",
+      "compensation": "Not disclosed",
+      "fit_score": 75,
+      "status": "Live — official careers page lists the AI Research Intern role in Current Openings; posting date 2026-07-01, so confirm cohort availability. Checked 2026-10-13.",
+      "application_link": "https://www.bytehubble.ai/careers",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 78,
+      "role": "AI / Machine Learning Engineer",
+      "company": "Humans Care Foundation",
+      "category": "AI/ML Engineer",
+      "location": "Remote India",
+      "experience": [
+        "Internship",
+        "Recent grad/fresher"
+      ],
+      "employer_tier": "Other / Not in Report",
+      "compensation": "Paid internship for one month initially; extension based on performance; amount not disclosed.",
+      "fit_score": 72,
+      "status": "Live — official careers page lists the role; paid one-month internship track, extendable on performance. Checked 2026-10-13.",
+      "application_link": "https://www.thehcf.in/careers/ai-ml-engineer/apply",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 79,
+      "role": "Computer Vision & Multimodal AI Engineer",
+      "company": "Humans Care Foundation",
+      "category": "Computer Vision Engineer",
+      "location": "Remote India",
+      "experience": [
+        "Internship",
+        "Recent grad/fresher"
+      ],
+      "employer_tier": "Other / Not in Report",
+      "compensation": "Paid internship for one month initially; extension based on performance; amount not disclosed.",
+      "fit_score": 72,
+      "status": "Live — official careers page lists the role and is accepting applications; paid one-month internship track, extendable on performance. Checked 2026-10-13.",
+      "application_link": "https://www.thehcf.in/careers/computer-vision-multimodal-engineer/apply",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 80,
+      "role": "NLP & Generative AI Engineer",
+      "company": "Humans Care Foundation",
+      "category": "GenAI Engineer",
+      "location": "Remote India",
+      "experience": [
+        "Internship",
+        "Recent grad/fresher"
+      ],
+      "employer_tier": "Other / Not in Report",
+      "compensation": "Paid internship for one month initially; extension based on performance; amount not disclosed. Separate two-week traineeship costs ₹500 and is not a job.",
+      "fit_score": 68,
+      "status": "Live — official careers page lists the role and is accepting applications; paid one-month internship track, extendable on performance. Checked 2026-10-13.",
+      "application_link": "https://www.thehcf.in/careers/nlp-generative-ai-engineer/apply",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 81,
+      "role": "ML Engineer (Training Infra), Foundational Models",
+      "company": "Sarvam AI",
+      "category": "Foundation Model Engineer",
+      "location": "Bengaluru — on-site",
+      "experience": [
+        "0–2 YOE"
+      ],
+      "employer_tier": "Tier 1 — Foundation Model",
+      "compensation": "Not disclosed",
+      "fit_score": 93,
+      "status": "Eligibility-uncertain — official application page is active. JD lists 3+ years as baseline but considers exceptional early-career systems candidates; prior large-model training and open-source experience are expected. Checked 2026-10-13.",
+      "application_link": "https://jobs.ashbyhq.com/sarvam/e9fb1269-fc4b-4879-aa35-0b75a8c83611/application",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 82,
+      "role": "ML Engineer, Speech & Language",
+      "company": "Saaya",
+      "category": "NLP Engineer",
+      "location": "Bengaluru — Remote/Hybrid",
+      "experience": [],
+      "employer_tier": "Tier 4 — High-Potential Startup",
+      "compensation": "Not disclosed",
+      "fit_score": 78,
+      "status": "Eligibility-uncertain — official careers page lists the role as currently hiring; experience threshold and compensation not disclosed; checked 2026-10-13.",
+      "application_link": "https://saaya.ai/careers",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 83,
+      "role": "Research Engineer, Post-Training",
+      "company": "[Jurisphere.ai](http://Jurisphere.ai)",
+      "category": "Research Engineer / AI Research Engineer",
+      "location": "Bengaluru",
+      "experience": [
+        "Entry-level"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Live — LinkedIn listing shows Apply; seniority labeled Entry level; hands-on LLM training/post-training is required; checked 2026-10-13",
+      "application_link": "https://in.linkedin.com/jobs/view/research-engineer-post-training-at-jurisphere-ai-4464274960",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": 84,
+      "role": "AI Researcher: Reasoning & Retrieval",
+      "company": "Auric AI Labs",
+      "category": "Research Engineer / AI Research Engineer",
+      "location": "Bengaluru",
+      "experience": [
+        "No experience required"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Live — employer-posted LinkedIn listing shows Apply; no experience or degree requirement stated; checked 2026-10-13",
+      "application_link": "https://in.linkedin.com/jobs/view/ai-researcher-reasoning-retrieval-at-auric-ai-labs-4452393406",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": 85,
+      "role": "AI Researcher: Entity Resolution & Knowledge Graphs",
+      "company": "Auric AI Labs",
+      "category": "Research Engineer / AI Research Engineer",
+      "location": "Bengaluru",
+      "experience": [
+        "No experience required"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Live — employer-posted LinkedIn listing shows Apply; direct experience is a strong signal, not a prerequisite; checked 2026-10-13",
+      "application_link": "https://in.linkedin.com/jobs/view/ai-researcher-entity-resolution-knowledge-graphs-at-auric-ai-labs-4469430088",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": 86,
+      "role": "AI Researcher: Adversarial Systems",
+      "company": "Auric AI Labs",
+      "category": "Research Engineer / AI Research Engineer",
+      "location": "Bengaluru",
+      "experience": [
+        "No experience required"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Live — employer-posted LinkedIn listing shows Apply; no seniority requirement stated; checked 2026-10-13",
+      "application_link": "https://in.linkedin.com/jobs/view/ai-researcher-adversarial-systems-at-auric-ai-labs-4477901308",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": 87,
+      "role": "Junior Computer Vision Researcher",
+      "company": "Auric AI Labs",
+      "category": "Computer Vision Engineer",
+      "location": "Bengaluru",
+      "experience": [
+        "Recent grad/fresher"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed; JD says compensation and benefits are competitive and tailored to expertise",
+      "fit_score": null,
+      "status": "Live — LinkedIn listing has Apply available; recent graduates with strong hands-on CV work are encouraged; checked 2026-10-12",
+      "application_link": "https://in.linkedin.com/jobs/view/junior-computer-vision-researcher-at-auric-ai-labs-4470004765",
+      "first_seen": "2026-10-12",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": 88,
+      "role": "AI/ML Engineer: SIGINT & ELINT",
+      "company": "Auric AI Labs",
+      "category": "AI/ML Engineer",
+      "location": "Bengaluru",
+      "experience": [],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Live — active LinkedIn application; no explicit experience or degree threshold stated in the JD; checked 2026-10-12",
+      "application_link": "https://in.linkedin.com/jobs/view/ai-ml-engineer-sigint-elint-at-auric-ai-labs-4476836001",
+      "first_seen": "2026-10-12",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": 89,
+      "role": "Founding AI + Backend Engineer",
+      "company": "Winsen Labs",
+      "category": "AI Software Engineer",
+      "location": "Mumbai — on-site",
+      "experience": [
+        "0–2 YOE",
+        "Recent grad/fresher"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Live — official careers page lists role; 1–2 YOE or exceptional new grads with strong portfolios; checked 2026-10-12",
+      "application_link": "https://winsenlabs.com/careers/founding-engineer",
+      "first_seen": "2026-10-12",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": 90,
+      "role": "Data Science Intern",
+      "company": "Sony Research India",
+      "category": "Junior Data Scientist",
+      "location": "Remote India",
+      "experience": [
+        "Internship",
+        "Bachelor's / pursuing degree in CS"
+      ],
+      "employer_tier": "Not classified",
+      "compensation": "Paid internship; amount not disclosed",
+      "fit_score": null,
+      "status": "Availability/eligibility uncertain — employer-posted LinkedIn listing remains accessible and describes a six-month paid internship starting the first week of November 2026, but Sony's official careers page simultaneously displays a general 'no open positions at the moment' notice while listing internships with Apply Now. Education wording also appears to target current students, so 2026-graduate eligibility is unclear. Checked 2026-10-14.",
+      "application_link": "https://in.linkedin.com/jobs/view/data-science-intern-at-sony-research-india-4478080141",
+      "first_seen": "2026-10-12",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 91,
+      "role": "LLM Research Intern",
+      "company": "Sony Research India",
+      "category": "AI/ML Research Intern",
+      "location": "Remote India",
+      "experience": [
+        "Internship",
+        "Research internship; LLM project experience required"
+      ],
+      "employer_tier": "Tier 2 — Research / GCC",
+      "compensation": "Paid internship; amount not disclosed",
+      "fit_score": 90,
+      "status": "Availability/eligibility uncertain — employer-posted LinkedIn listing remains accessible and states a six-month paid internship starting the first week of November 2026, but Sony's official careers page simultaneously displays a general 'no open positions at the moment' notice while listing internships with Apply Now. Bachelor's applicants must show hands-on Python LLM fine-tuning for language-processing applications. Checked 2026-10-14.",
+      "application_link": "https://in.linkedin.com/jobs/view/llm-research-intern-at-sony-research-india-4478061801",
+      "first_seen": "2026-10-12",
+      "last_checked": "2026-10-14"
+    },
+    {
+      "id": 92,
+      "role": "AI/ML Intern",
+      "company": "Not specified",
+      "category": "Unclassified",
+      "location": "Not specified",
+      "experience": [],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Not recorded",
+      "application_link": null,
+      "first_seen": null,
+      "last_checked": null
+    },
+    {
+      "id": 93,
+      "role": "Agentic AI Engineer Intern",
+      "company": "NeuroMesh",
+      "category": "Unclassified",
+      "location": "Not specified",
+      "experience": [],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Live — current official careers page",
+      "application_link": "https://www.neuro-mesh.com/careers.html",
+      "first_seen": null,
+      "last_checked": null
+    },
+    {
+      "id": 94,
+      "role": "Junior Generative AI Engineer",
+      "company": "NeuLeap",
+      "category": "GenAI Engineer",
+      "location": "Pune",
+      "experience": [
+        "0–2"
+      ],
+      "employer_tier": "Tier 4 — High-Potential Startup",
+      "compensation": "Not disclosed",
+      "fit_score": 72,
+      "status": "Live — official NeuLeap careers page active; checked 2026-10-10",
+      "application_link": "https://neuleap.ai/careers/4",
+      "first_seen": null,
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": 95,
+      "role": "Software & AI Engineer Intern",
+      "company": "HUEWINE",
+      "category": "Unclassified",
+      "location": "Not specified",
+      "experience": [],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Live — current LinkedIn listing",
+      "application_link": null,
+      "first_seen": null,
+      "last_checked": null
+    },
+    {
+      "id": 96,
+      "role": "AI Developer Internship in Bangalore",
+      "company": "Brandshark",
+      "category": "Unclassified",
+      "location": "Not specified",
+      "experience": [],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Live — current listing",
+      "application_link": null,
+      "first_seen": null,
+      "last_checked": null
+    },
+    {
+      "id": 97,
+      "role": "Generative AI Intern",
+      "company": "Adfluence Hub",
+      "category": "Unclassified",
+      "location": "Not specified",
+      "experience": [],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Live — current LinkedIn listing",
+      "application_link": null,
+      "first_seen": null,
+      "last_checked": null
+    },
+    {
+      "id": 98,
+      "role": "Generative AI Intern (Python, Prompting, AI APIs)",
+      "company": "MediNex Workforce",
+      "category": "Unclassified",
+      "location": "Not specified",
+      "experience": [],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Live — current LinkedIn listing",
+      "application_link": null,
+      "first_seen": null,
+      "last_checked": null
+    },
+    {
+      "id": 99,
+      "role": "AI Intern",
+      "company": "Honasa Consumer Ltd.",
+      "category": "Unclassified",
+      "location": "Not specified",
+      "experience": [],
+      "employer_tier": "Not classified",
+      "compensation": "Not disclosed",
+      "fit_score": null,
+      "status": "Live — current LinkedIn listing",
+      "application_link": "https://in.linkedin.com/jobs/view/ai-intern-at-honasa-consumer-ltd-4472919251",
+      "first_seen": null,
+      "last_checked": null
+    }
+  ]
+}
